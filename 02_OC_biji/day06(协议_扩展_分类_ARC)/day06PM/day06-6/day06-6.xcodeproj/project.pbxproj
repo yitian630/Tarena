@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85F4463E18E016FB0007046B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F4463D18E016FB0007046B /* Foundation.framework */; };
+		85F4464118E016FB0007046B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F4464018E016FB0007046B /* main.m */; };
+		85F4464518E016FB0007046B /* day06_6.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85F4464418E016FB0007046B /* day06_6.1 */; };
+		85F4464D18E017060007046B /* TRMysql.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F4464C18E017060007046B /* TRMysql.m */; };
+		85F4465018E0170C0007046B /* TROracle.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F4464F18E0170C0007046B /* TROracle.m */; };
+		85F4465318E017140007046B /* TRSqlServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F4465218E017140007046B /* TRSqlServer.m */; };
+		85F4465718E01E9E0007046B /* TRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F4465618E01E9E0007046B /* TRButton.m */; };
+		85F4465B18E01F3F0007046B /* TRButton2.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F4465A18E01F3F0007046B /* TRButton2.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85F4463818E016FA0007046B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				85F4464518E016FB0007046B /* day06_6.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85F4463A18E016FA0007046B /* day06-6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "day06-6"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F4463D18E016FB0007046B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85F4464018E016FB0007046B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85F4464318E016FB0007046B /* day06-6-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "day06-6-Prefix.pch"; sourceTree = "<group>"; };
+		85F4464418E016FB0007046B /* day06_6.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = day06_6.1; sourceTree = "<group>"; };
+		85F4464B18E017060007046B /* TRMysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMysql.h; sourceTree = "<group>"; };
+		85F4464C18E017060007046B /* TRMysql.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMysql.m; sourceTree = "<group>"; };
+		85F4464E18E0170C0007046B /* TROracle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TROracle.h; sourceTree = "<group>"; };
+		85F4464F18E0170C0007046B /* TROracle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TROracle.m; sourceTree = "<group>"; };
+		85F4465118E017140007046B /* TRSqlServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSqlServer.h; sourceTree = "<group>"; };
+		85F4465218E017140007046B /* TRSqlServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSqlServer.m; sourceTree = "<group>"; };
+		85F4465418E0174F0007046B /* TRJdbc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRJdbc.h; sourceTree = "<group>"; };
+		85F4465518E01E9E0007046B /* TRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRButton.h; sourceTree = "<group>"; };
+		85F4465618E01E9E0007046B /* TRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRButton.m; sourceTree = "<group>"; };
+		85F4465818E01ED50007046B /* TRButtonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRButtonProtocol.h; sourceTree = "<group>"; };
+		85F4465918E01F3F0007046B /* TRButton2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRButton2.h; sourceTree = "<group>"; };
+		85F4465A18E01F3F0007046B /* TRButton2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRButton2.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85F4463718E016FA0007046B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F4463E18E016FB0007046B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85F4463118E016FA0007046B = {
+			isa = PBXGroup;
+			children = (
+				85F4463F18E016FB0007046B /* day06-6 */,
+				85F4463C18E016FA0007046B /* Frameworks */,
+				85F4463B18E016FA0007046B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85F4463B18E016FA0007046B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85F4463A18E016FA0007046B /* day06-6 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85F4463C18E016FA0007046B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85F4463D18E016FB0007046B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85F4463F18E016FB0007046B /* day06-6 */ = {
+			isa = PBXGroup;
+			children = (
+				85F4464018E016FB0007046B /* main.m */,
+				85F4464418E016FB0007046B /* day06_6.1 */,
+				85F4464218E016FB0007046B /* Supporting Files */,
+				85F4464B18E017060007046B /* TRMysql.h */,
+				85F4464C18E017060007046B /* TRMysql.m */,
+				85F4464E18E0170C0007046B /* TROracle.h */,
+				85F4464F18E0170C0007046B /* TROracle.m */,
+				85F4465118E017140007046B /* TRSqlServer.h */,
+				85F4465218E017140007046B /* TRSqlServer.m */,
+				85F4465418E0174F0007046B /* TRJdbc.h */,
+				85F4465518E01E9E0007046B /* TRButton.h */,
+				85F4465618E01E9E0007046B /* TRButton.m */,
+				85F4465918E01F3F0007046B /* TRButton2.h */,
+				85F4465A18E01F3F0007046B /* TRButton2.m */,
+				85F4465818E01ED50007046B /* TRButtonProtocol.h */,
+			);
+			path = "day06-6";
+			sourceTree = "<group>";
+		};
+		85F4464218E016FB0007046B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85F4464318E016FB0007046B /* day06-6-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85F4463918E016FA0007046B /* day06-6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85F4464818E016FB0007046B /* Build configuration list for PBXNativeTarget "day06-6" */;
+			buildPhases = (
+				85F4463618E016FA0007046B /* Sources */,
+				85F4463718E016FA0007046B /* Frameworks */,
+				85F4463818E016FA0007046B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "day06-6";
+			productName = "day06-6";
+			productReference = 85F4463A18E016FA0007046B /* day06-6 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85F4463218E016FA0007046B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+			};
+			buildConfigurationList = 85F4463518E016FA0007046B /* Build configuration list for PBXProject "day06-6" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85F4463118E016FA0007046B;
+			productRefGroup = 85F4463B18E016FA0007046B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85F4463918E016FA0007046B /* day06-6 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85F4463618E016FA0007046B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F4464D18E017060007046B /* TRMysql.m in Sources */,
+				85F4465718E01E9E0007046B /* TRButton.m in Sources */,
+				85F4465318E017140007046B /* TRSqlServer.m in Sources */,
+				85F4464118E016FB0007046B /* main.m in Sources */,
+				85F4465B18E01F3F0007046B /* TRButton2.m in Sources */,
+				85F4465018E0170C0007046B /* TROracle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		85F4464618E016FB0007046B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		85F4464718E016FB0007046B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		85F4464918E016FB0007046B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "day06-6/day06-6-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85F4464A18E016FB0007046B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "day06-6/day06-6-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85F4463518E016FA0007046B /* Build configuration list for PBXProject "day06-6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F4464618E016FB0007046B /* Debug */,
+				85F4464718E016FB0007046B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85F4464818E016FB0007046B /* Build configuration list for PBXNativeTarget "day06-6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F4464918E016FB0007046B /* Debug */,
+				85F4464A18E016FB0007046B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85F4463218E016FA0007046B /* Project object */;
+}

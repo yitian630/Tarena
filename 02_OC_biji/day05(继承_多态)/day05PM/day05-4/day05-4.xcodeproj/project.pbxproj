@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85AE764918DC195E00056D0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AE764818DC195E00056D0C /* Foundation.framework */; };
+		85AE764C18DC195E00056D0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AE764B18DC195E00056D0C /* main.m */; };
+		85AE765018DC195E00056D0C /* day05_4.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85AE764F18DC195E00056D0C /* day05_4.1 */; };
+		85AE765818DC197000056D0C /* TRTransportation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AE765718DC197000056D0C /* TRTransportation.m */; };
+		85AE765B18DC19BD00056D0C /* TRTaxi.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AE765A18DC19BD00056D0C /* TRTaxi.m */; };
+		85AE765E18DC19DF00056D0C /* TRBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AE765D18DC19DF00056D0C /* TRBus.m */; };
+		85AE766118DC1A0400056D0C /* TRBike.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AE766018DC1A0400056D0C /* TRBike.m */; };
+		85AE766418DC28C900056D0C /* TRStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AE766318DC28C900056D0C /* TRStudent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85AE764318DC195E00056D0C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				85AE765018DC195E00056D0C /* day05_4.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85AE764518DC195E00056D0C /* day05-4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "day05-4"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85AE764818DC195E00056D0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85AE764B18DC195E00056D0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85AE764E18DC195E00056D0C /* day05-4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "day05-4-Prefix.pch"; sourceTree = "<group>"; };
+		85AE764F18DC195E00056D0C /* day05_4.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = day05_4.1; sourceTree = "<group>"; };
+		85AE765618DC197000056D0C /* TRTransportation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTransportation.h; sourceTree = "<group>"; };
+		85AE765718DC197000056D0C /* TRTransportation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTransportation.m; sourceTree = "<group>"; };
+		85AE765918DC19BD00056D0C /* TRTaxi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTaxi.h; sourceTree = "<group>"; };
+		85AE765A18DC19BD00056D0C /* TRTaxi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTaxi.m; sourceTree = "<group>"; };
+		85AE765C18DC19DF00056D0C /* TRBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBus.h; sourceTree = "<group>"; };
+		85AE765D18DC19DF00056D0C /* TRBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBus.m; sourceTree = "<group>"; };
+		85AE765F18DC1A0400056D0C /* TRBike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBike.h; sourceTree = "<group>"; };
+		85AE766018DC1A0400056D0C /* TRBike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBike.m; sourceTree = "<group>"; };
+		85AE766218DC28C900056D0C /* TRStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRStudent.h; sourceTree = "<group>"; };
+		85AE766318DC28C900056D0C /* TRStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRStudent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85AE764218DC195E00056D0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85AE764918DC195E00056D0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85AE763C18DC195E00056D0C = {
+			isa = PBXGroup;
+			children = (
+				85AE764A18DC195E00056D0C /* day05-4 */,
+				85AE764718DC195E00056D0C /* Frameworks */,
+				85AE764618DC195E00056D0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85AE764618DC195E00056D0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85AE764518DC195E00056D0C /* day05-4 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85AE764718DC195E00056D0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85AE764818DC195E00056D0C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85AE764A18DC195E00056D0C /* day05-4 */ = {
+			isa = PBXGroup;
+			children = (
+				85AE764B18DC195E00056D0C /* main.m */,
+				85AE764F18DC195E00056D0C /* day05_4.1 */,
+				85AE764D18DC195E00056D0C /* Supporting Files */,
+				85AE765618DC197000056D0C /* TRTransportation.h */,
+				85AE765718DC197000056D0C /* TRTransportation.m */,
+				85AE765918DC19BD00056D0C /* TRTaxi.h */,
+				85AE765A18DC19BD00056D0C /* TRTaxi.m */,
+				85AE765C18DC19DF00056D0C /* TRBus.h */,
+				85AE765D18DC19DF00056D0C /* TRBus.m */,
+				85AE765F18DC1A0400056D0C /* TRBike.h */,
+				85AE766018DC1A0400056D0C /* TRBike.m */,
+				85AE766218DC28C900056D0C /* TRStudent.h */,
+				85AE766318DC28C900056D0C /* TRStudent.m */,
+			);
+			path = "day05-4";
+			sourceTree = "<group>";
+		};
+		85AE764D18DC195E00056D0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85AE764E18DC195E00056D0C /* day05-4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85AE764418DC195E00056D0C /* day05-4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85AE765318DC195E00056D0C /* Build configuration list for PBXNativeTarget "day05-4" */;
+			buildPhases = (
+				85AE764118DC195E00056D0C /* Sources */,
+				85AE764218DC195E00056D0C /* Frameworks */,
+				85AE764318DC195E00056D0C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "day05-4";
+			productName = "day05-4";
+			productReference = 85AE764518DC195E00056D0C /* day05-4 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85AE763D18DC195E00056D0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+			};
+			buildConfigurationList = 85AE764018DC195E00056D0C /* Build configuration list for PBXProject "day05-4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85AE763C18DC195E00056D0C;
+			productRefGroup = 85AE764618DC195E00056D0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85AE764418DC195E00056D0C /* day05-4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85AE764118DC195E00056D0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85AE764C18DC195E00056D0C /* main.m in Sources */,
+				85AE766118DC1A0400056D0C /* TRBike.m in Sources */,
+				85AE765818DC197000056D0C /* TRTransportation.m in Sources */,
+				85AE766418DC28C900056D0C /* TRStudent.m in Sources */,
+				85AE765E18DC19DF00056D0C /* TRBus.m in Sources */,
+				85AE765B18DC19BD00056D0C /* TRTaxi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		85AE765118DC195E00056D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		85AE765218DC195E00056D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		85AE765418DC195E00056D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "day05-4/day05-4-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85AE765518DC195E00056D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "day05-4/day05-4-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85AE764018DC195E00056D0C /* Build configuration list for PBXProject "day05-4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85AE765118DC195E00056D0C /* Debug */,
+				85AE765218DC195E00056D0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85AE765318DC195E00056D0C /* Build configuration list for PBXNativeTarget "day05-4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85AE765418DC195E00056D0C /* Debug */,
+				85AE765518DC195E00056D0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85AE763D18DC195E00056D0C /* Project object */;
+}
