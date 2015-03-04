@@ -1,0 +1,337 @@
+//NSString：
+//1、init初始化
+        NSString * str1 = [[NSString alloc] init];
+        NSLog(@"str1 = %@",str1);
+//2、initWithBytes:length:encoding:从给定字符串按照给定获取方向,得到指定个数的字符
+        NSString * str2 = [[NSString alloc] initWithBytes:"afasffaf" length:6 encoding:NSUTF8StringEncoding];
+        NSLog(@"str2 = %@",str2);
+//3、initWithCharacters:length:从一个C语言字符串获得lenth个元素
+        UniChar s[8] = {'e','4','g','d','d','g'};
+        NSString * str3 = [[NSString alloc] initWithCharacters:s length:4];
+        NSLog(@"str3 = %@",str3);
+//4、initWithCString:encoding:按照方向从一个C语言字符串获得元素
+        NSString * str4 = [[NSString alloc] initWithCString:"fasfa" encoding:NSUTF8StringEncoding];
+        NSLog(@"str4 = %@",str4);
+//5、initWithUTF8String:初始化,用UTF8格式String
+        NSString * str5 = [[NSString alloc] initWithUTF8String:"ARQWRT"];
+        NSLog(@"str5 = %@",str5);
+        [str5 release];
+//6、initWithFormat:用给定字符串初始化
+        NSString * str6 = [[NSString alloc] initWithFormat:@"QRQWTQT"];
+        [str6 release];
+// 7、stringWithFormat:便利构造器
+        NSString * str7 = [NSString stringWithFormat:@"qqqqqq"];
+        [str7 release];
+//8、stringWithCharacters:length:从C语言字符串获取length个字符
+        NSString * str8 = [NSString stringWithCharacters:s length:2];
+//9、stringWithString:字符串初始化字符串
+        NSString * str9 = [NSString stringWithString:str8];
+        [str9 release];
+//10、stringWithCString:encoding:便利构造器创建字符串
+        NSString * str10 = [NSString stringWithCString:"sasfaf" encoding:NSUTF8StringEncoding];
+        NSLog(@"str10 = %@",str10);
+//11、stringWithUTF8String:便利构造器创建字符串
+        NSString * str11 = [NSString stringWithUTF8String:"qw   er"];
+// 12、length字符串长度
+        unsigned long result = [str11 length];
+        NSLog(@"result = %ld",result);
+//13、lengthOfBytesUsingEncoding:
+        unsigned long a = [str11 lengthOfBytesUsingEncoding:NSUTF16StringEncoding];
+        NSLog(@"a = %ld",a);
+//14、characterAtIndex:指定下标的字符
+        UniChar a1 = [str11 characterAtIndex:2];
+        NSLog(@"a1 = %hd",a1);
+//15、getCharacters:range:获取一定范围内的字符
+        NSRange ran = NSMakeRange(1, 2);
+        [str11 getCharacters:s range:ran];
+        for (int i = 0; i < ran.length; i++) {
+            NSLog(@"s[i] = %c",s[i]);
+        }
+//16、cStringUsingEncoding:以一定格式转成C字符串
+        const char * p1 = [str11 cStringUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"p1 = %s",p1);
+//17、UTF8String
+        const char * p2 = [str11 UTF8String];
+        NSLog(@"p2 = %s",p2);
+//18、stringByAppendingFormat:添加字符
+        NSString * str12 = [str11 stringByAppendingFormat:@"aaaaaa"];
+//19、stringByAppendingString:用字符串添加
+        NSString * str13 = [str12 stringByAppendingString:str11];
+//20、stringByPaddingToLength:withString:startingAtIndex:创建一个新字符串,长度为length,旧字符串从索引字符开始拷贝到旧字符串后面
+        NSString * str14 = [str13 stringByPaddingToLength:20 withString:str13 startingAtIndex:1];
+        NSLog(@"str14 = %@",str14);
+//21、componentsSeparatedByString://返回一个数组,字符串字串被给定的字符串分存到数组里
+        NSString * str15 = @"affaf, rq, 41wre";
+        NSArray * array = [str15 componentsSeparatedByString:@" "];
+        NSLog(@"%@",array);
+//22、componentsSeparatedByCharactersInSet:用指定字符分割
+        NSArray * array1 = [str15 componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
+        NSLog(@"%@",array1);
+//23、substringFromIndex:获得指定下标的子字符串
+        NSString * str16 = [str14 substringFromIndex:10];
+        NSLog(@"str16 = %@",str16);
+//24、substringWithRange:一定范围的字符串,字串
+        NSRange ran1 = NSMakeRange(2, 4);
+        NSString * str17 = [str14 substringWithRange:ran1];
+        NSLog(@"str17 = %@",str17);
+//25、substringToIndex:到指定下标的字串
+        NSString * str18 = [str14 substringToIndex:10];
+        NSLog(@"str18 = %@",str18);
+//26、rangeOfString:字符串范围
+        NSRange ran2 = [str14 rangeOfString:@"aaaqwe"];
+        NSLog(@"location = %ld,lenth = %ld",ran2.location,ran2.length);
+//27、rangeOfString:options:从指定方向查找字符串,返回范围
+        NSRange ran3 = [str14 rangeOfString:@"qweraaaa" options: NSBackwardsSearch];
+        NSLog(@"location = %ld,lenth = %ld",ran3.location,ran3.length);
+// 28、rangeOfString:options:range:从指定方向指定范围查找字符串,返回范围
+        NSRange ran4 = [str14 rangeOfString:@"raaaaa" options:NSBackwardsSearch range:NSMakeRange(1, 15)];
+        NSLog(@"location = %ld,lenth = %ld",ran4.location,ran4.length);
+//29、stringByReplacingOccurrencesOfString:withString:指定范围内的字串用给定的字符串替换
+        NSString * string = @"qqqqqqq";
+        NSString * str20 = [str14 stringByReplacingCharactersInRange:ran2 withString:string];
+        NSLog(@"str20 = %@",str20);
+//30、stringByReplacingOccurrencesOfString:withString:options:range:按照指定方向,在指定范围内的指定字符串替换成给定字符串
+        NSString * str21 = [str14 stringByReplacingOccurrencesOfString:@"aaa" withString:@"AAAA" options:NSBackwardsSearch range:NSMakeRange(1, 10)];
+        NSLog(@"str21 = %@",str21);
+//31、stringByReplacingCharactersInRange:withString:指定范围内的字符串用给定那个字符串替换
+        NSString * str22 = [str14 stringByReplacingCharactersInRange:ran1 withString:@"AAAAA"];
+        NSLog(@"str22 = %@",str22);
+//32、caseInsensitiveCompare:字符串比较
+        NSComparisonResult temp = [str14 caseInsensitiveCompare:@"qweraav"];
+        NSLog(@"temp = %ld",temp);
+//33、compare:字符串比较
+        NSComparisonResult temp1 = [str14 compare:@"aaaa"];
+        NSLog(@"temp1 = %ld",temp1);
+//34、compare:options:指定方向比较
+        NSComparisonResult temp2 = [str14 compare:@"zzzzz" options:NSBackwardsSearch];
+        NSLog(@"temp2 = %ld",temp2);
+//35、compare:options:range:指定方向,指定范围字符串与给定字符串比较
+        NSComparisonResult temp3 = [str14 compare:@"zzzz" options:NSBackwardsSearch range:NSMakeRange(3, 4)];
+         NSLog(@"temp3 = %ld",temp3);
+//36、hasPrefix:判断字符串是否以指定字符串开头
+        if ([str14 hasPrefix:@"qwe"]) {
+            NSLog(@"yes");
+        }
+//37、hasSuffix:判断字符串是否以指定字符串结束
+        if ([str14 hasSuffix:@"abc"]) {
+            NSLog(@"yes");
+        }else{
+            NSLog(@"no");
+        }
+//38、isEqualToString:比较字符串是否相等
+        if ([str14 isEqualToString:@"qwertty"]) {
+            NSLog(@"yes");
+        }else{
+            NSLog(@"no");
+        }
+//39、capitalizedString//首字母大写
+        NSString * str23 = [str14 capitalizedString];
+        NSLog(@"str23 = %@",str23);
+//40、lowercaseString全转小写
+        NSString * str24 = [str14 lowercaseString];
+        NSLog(@"str24 = %@",str24);
+//41、uppercaseString//全转大写
+        NSString * str25 = [str14 uppercaseString];
+//42、doubleValue
+        NSString * str26 = @"a2797.79";
+        double d1 = [str26 doubleValue];
+        NSLog(@"d1 = %lf",d1);
+//43、floatValue
+        float d2 = [str26 floatValue];
+        NSLog(@"d2 = %lf",d2);
+//44、intValue
+        int d3 = [str26 intValue];
+//45、integerValue
+        unsigned long d4 = [str26 integerValue];
+        NSLog(@"d4 = %ld",d4);
+//46、longLongValue
+        long long d5 = [str26 longLongValue];
+        NSLog(@"d5 = %lld",d5);
+//47、boolValue //遇到"Y", "y", "T", "t"或者数字返回YES
+        NSString * str27 = @"afa";
+        BOOL bo = [str27 boolValue];
+        if (bo) {
+            NSLog(@"yes");
+        }
+        NSLog(@"%@",str14);
+        NSLog(@"%@",str25);
+        NSLog(@"d2 = %.2d",d3);
+        NSLog(@"d5 = %ld",d4);
+//48、stringWithCapacity:便利构造器创建可变字符串
+        id mustr = [NSMutableString stringWithCapacity:10];
+//49、initWithCapacity:初始化一个可变字符串
+        NSMutableString * mustr1 = [[NSMutableString alloc] initWithCapacity:20];
+//50、appendFormat:追加字符串
+        [mustr1 appendFormat:@"affgf"];
+        NSLog(@"%@",mustr1);
+//51、appendString:用字符串追加到旧字符串上
+        [mustr appendString:mustr1];
+        NSLog(@"%@",mustr);
+//52、deleteCharactersInRange:删除指定范围内的字符串
+        [mustr deleteCharactersInRange:NSMakeRange(1, 2)];
+        NSLog(@"%@",mustr);
+//53、insertString:atIndex:在指定下标除插入字符串
+        [mustr1 insertString:mustr atIndex:0];
+        NSLog(@"mustr1 = %@",mustr1);
+//54、replaceCharactersInRange:withString:用给定字符串替换原串指定范围内的字符串
+        [mustr1 replaceCharactersInRange:NSMakeRange(1, 7) withString:@"agqrqrqe"];
+        NSLog(@"mustr1 = %@",mustr1);
+//55、replaceOccurrencesOfString:withString:options:range:从指定方向开始,遇到要被替换的字符串,用替换字符串替换它,并返回被替换字符串在原来字符串的开始位置下标
+        NSUInteger i = [mustr1 replaceOccurrencesOfString:@"aagq" withString:@"zaz" options:NSBackwardsSearch range:NSMakeRange(0, 4)];
+        NSLog(@"mustr1 = %@",mustr1);
+        NSLog(@"i = %ld",i);
+//56、setString:字符串重置
+        [mustr1 setString:@"fffffff"];
+        
+        
+// NSArray
+//1、array便利构造器
+        id myarray = [NSArray array];
+        NSLog(@"myarray = %@",myarray);
+// 2、arrayWithArray:便利构造器方法,用一个数组初始化数组
+        NSArray * ar1 = [NSArray arrayWithObject:@"aaaaa"];
+        NSArray * ar2 = [NSArray arrayWithArray:ar1];
+        NSLog(@"ar2 = %@",ar2);
+//3、arrayWithObject:一个元素初始化数组
+        NSArray * ar3 = [NSArray arrayWithObject:@"sssss"];
+        NSLog(@"ar3 = %@",ar3);
+//4、arrayWithObjects:多个元素初始化数组
+        NSArray * ar4 = [NSArray arrayWithObjects:@"qwer",@"asdf",@"zxcv", nil];
+        NSLog(@"ar4 = %@",ar4);
+//5、arrayWithObjects:count:用指定元素个数,初始化数组,注意参数
+        NSString * strings[3] = {@"qwe",@"asd",@"zxc"};
+        NSArray * ar5 = [NSArray arrayWithObjects:strings count:3];
+//6、init
+//7、initWithArray:用数组初始化数组
+        NSArray * ar6 = [[NSArray alloc] initWithArray:ar5];
+        [ar6 release];
+//8、initWithObjects:给定多个对象初始化数组
+        NSArray * ar7 = [[NSArray alloc] initWithObjects:@"qwer",@"asdf",@"zxcv",nil];
+        [ar7 release];
+//9、initWithObjects:count:初始化一个数组,给定元素个数(参数const id [])
+        NSArray * ar8 = [[NSArray alloc] initWithObjects:strings count:3];
+//10、containsObject:判断是否含有指定元素
+        if([ar8 containsObject:@"qwe"]){
+            NSLog(@"yes");
+        }
+//11、count数组元素个数
+        unsigned long b = [ar8 count];
+        NSLog(@"%ld",b);
+//12、getObjects:range:返回一个数组,给定一个范围,在原数组里逐一获取元素到接收数组
+        id *obj;
+        NSRange range1 = NSMakeRange(1, 2);
+        obj = malloc(sizeof(id)*range1.length);
+        [ar8 getObjects:obj range:range1];
+        for (int i = 0; i < range1.length; i++) {
+            NSLog(@"obj = %@",obj[i]);
+        }
+        free(obj);
+//13、firstObject返回一个数组--原数组的第一个元素
+        NSLog(@"ar8 = %@",ar8);
+        NSArray * ar10 = [ar8 firstObjectCommonWithArray:ar8];
+        NSLog(@"ar10 = %@",ar10);
+//14、lastObject返回数组最后一个元素
+        NSArray * ar11 = [ar8 lastObject];
+        [ar11 release];
+//15、objectAtIndex:返回指定索引值的元素
+        NSArray * ar13 = [ar8 objectAtIndex:1];
+        NSLog(@"ar13 = %@",ar13);
+//16、objectsAtIndexes:返回一个数组,指定索引值的元素
+        NSIndexSet * ss = [NSIndexSet indexSetWithIndex:2];
+        NSArray * ar14 = [ar8 objectsAtIndexes:ss];
+        NSLog(@"ar14 = %@",ar14);
+//17、objectEnumerator 返回索引,可以根据返回索引值输出数组元素
+        NSEnumerator * enum1 = [ar8 objectEnumerator];
+        id myobj;
+        while (myobj = [enum1 nextObject]) {
+            NSLog(@"obj = %@",myobj);
+        }
+//18、reverseObjectEnumerator反向获取下标,返回下标值,可以反向输出数组元素
+       NSEnumerator * enum2 = [ar8 reverseObjectEnumerator];
+        id myobj1;
+        while (myobj1 = [enum2 nextObject]) {
+            NSLog(@"obj1 = %@",myobj1);
+        }
+//19、indexOfObject:返回元素下标
+        unsigned long temp19 = [ar8 indexOfObject:@"asd"];
+        NSLog(@"temp 19 = %ld",temp19);
+//20、indexOfObject:inRange:在指定范围内找出给定对象,返回下标值
+        unsigned long temp20 = [ar8 indexOfObject:@"asd" inRange:NSMakeRange(1, 1)];
+        NSLog(@"temp20 = %ld",temp20);
+//21、makeObjectsPerformSelector:
+        
+//22、makeObjectsPerformSelector:withObject:
+        
+//23、firstObjectCommonWithArray:第一个相同的元素
+        NSArray * ar22 = [NSArray arrayWithObjects:@"qeqe",@"asd",nil];
+        id ar23 = [ar8 firstObjectCommonWithArray:ar22];
+        NSLog(@"ar23 = %@",ar23);
+// 24、isEqualToArray:比较是否相等
+        if ([ar8 isEqualToArray:ar22]) {
+            NSLog(@"yes");
+        }else{
+            NSLog(@"no");
+        }
+//25、arrayByAddingObject:将指定对象添加到数组
+        NSArray * ar25 = [ar8 arrayByAddingObject:@"tyu"];
+        NSLog(@"ar25 = %@",ar25);
+//26、arrayByAddingObjectsFromArray:从一个数组添加元素
+        NSArray * ar26 = [ar8 arrayByAddingObjectsFromArray:ar25];
+        NSLog(@"ar26 = %@",ar26);
+//27、sortedArrayUsingFunction:context:
+ 
+//28、sortedArrayUsingDescriptors:
+        
+//29、sortedArrayUsingSelector:
+        
+//30、componentsJoinedByString:用指定对象,符号分割数组元素
+        NSString * string30 = [ar8 componentsJoinedByString:@"--"];
+        NSLog(@"string30 = %@",string30);
+//31、arrayWithCapacity:便利构造器创建一个可变数组
+        NSMutableArray * mar1 = [NSMutableArray arrayWithCapacity:20];
+//32、initWithCapacity:初始化可变数组
+        NSMutableArray * mar2 = [[NSMutableArray alloc] initWithCapacity:20];
+//33、addObject:向可变数组添加给定对象
+        [mar1 addObject:@"afgh"];
+        NSLog(@"mar1 = %@",mar1);
+//34、addObjectsFromArray:从数组中向可变数组添加对象
+        [mar2 addObjectsFromArray:ar8];
+        NSLog(@"mar2 = %@",mar2);
+//35、insertObject:atIndex:在指定下标除增加一个对象
+        [mar2 insertObject:@"qqq" atIndex:2];
+        NSLog(@"mar2 = %@",mar2);
+//36、removeAllObjects移除可变数组内的所有对象
+        [mar1 removeAllObjects];
+        NSLog(@"mar1 = %@",mar1);
+//37、removeLastObject//移除可变数组最后一个对象
+        [mar2 removeLastObject];
+        NSLog(@"mar2 = %@",mar2);
+//38、removeObject:从可变数组内移除给定对象
+        [mar2 removeObject:@"qqq"];
+        NSLog(@"mar2 = %@",mar2);
+//39、removeObject:inRange:移除指定范围内的一个对象
+        [mar2 removeObject:@"qwe" inRange:NSMakeRange(0, 1)];
+        NSLog(@"mar2 = %@",mar2);
+//40、removeObjectAtIndex:移除指定下标的元素
+        [mar2 addObjectsFromArray:ar8];
+        NSLog(@"mar2 = %@",mar2);
+        [mar2 removeObjectAtIndex:3];
+        NSLog(@"mar2 = %@",mar2);
+//41、removeObjectsInArray:将给定数组的元素从可变数组中全部移除
+        [mar2 removeObjectsInArray:ar8];
+        NSLog(@"mar2 = %@",mar2);
+        [mar2 addObjectsFromArray:ar8];
+        NSLog(@"mar2 = %@",mar2);
+//42、removeObjectsInRange:移除给定范围内的所有元素
+        [mar2 removeObjectsInRange:NSMakeRange(0, 1)];
+        NSLog(@"mar2 = %@",mar2);
+//43、replaceObjectAtIndex:withObject:用给出的对象替换指定下标的元素
+        [mar2 replaceObjectAtIndex:1 withObject:@"kkkkk"];
+        NSLog(@"mar2 = %@",mar2);
+//44、setArray:重置可变数组
+        [mar2 setArray:ar8];
+        NSLog(@"mar2 = %@",mar2);
+//exchangeObjectAtIndex:withObjectAtIndex:指定下标的两个元素交换
+        [mar2 exchangeObjectAtIndex:2 withObjectAtIndex:1];
+        NSLog(@"mar2 = %@",mar2);
+ 
