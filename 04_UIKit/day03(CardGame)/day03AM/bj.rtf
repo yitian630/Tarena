@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg936\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19120\viewh12580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs68 \cf0 \'bb\'d8\'b9\'cb
+\f1 :\
+	xib
+\f0 \'ce\'c4\'bc\'fe
+\f1 \
+		IBOutlet\
+			
+\f0 \'ca\'f4\'d0\'d4
+\f1 \
+		IBAction\
+			
+\f0 \'b7\'bd\'b7\'a8
+\f1 \
+	
+\f0 \'b2\'ce\'ca\'fd\'a3\'ba\'ce\'de\'a3\'ac\'d2\'bb\'b8\'f6(\'c0\'e0\'d0\'cd\'bf\'c9\'d2\'d4\'ca\'c7id, \'d2\'b2\'bf\'c9\'d2\'d4\'ca\'c7\'be\'df\'cc\'e5\'b5\'c4\'c0\'e0\'d0\'cd)\'a3\'ac\'c1\'bd\'b8\'f6
+\f1 \
+	\
+	UISlider/UIStepper/UISwitch\
+		.value\
+		.on\
+		valueChanged
+\f0 \'ca\'c2\'bc\'fe
+\f1 \
+	
+\f0 UI
+\f1 TextField\
+
+\f0 \'bd\'f1\'cc\'ec
+\f1 :\
+\
+1. 
+\f0 \'bf\'d8\'bc\'fe
+\f1 (
+\f0 Control
+\f1 )
+\f0 \'a3\'ac
+\f1  
+\f0 \'ca\'d3\'cd\'bc
+\f1 (View), 
+\f0 \'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7
+\f1 (VC)\
+	1.1 
+\f0 \'bf\'d8\'bc\'fe
+\f1 \
+		
+\f0 \'d1\'cf\'b8\'f1\'b5\'c4\'b6\'a8\'d2\'e5\'ca\'c7, \'bf\'d8\'bc\'fe\'ca\'c7UIControl\'c0\'e0\'b5\'c4\'d7\'d3\'c0\'e0\'b6\'d4\'cf\'f3, \'d7\'ee\'b4\'f3\'b5\'c4\'cc\'d8\'b5\'e3\'ca\'c7\'bb\'e1\'b4\'a5\'b7\'a2\'ca\'c2\'bc\'fe\'a1\'a3\
+		\'b9\'e3\'d2\'e5\'c9\'cf\'a3\'ac \'ce\'d2\'c3\'c7\'bb\'e1\'b0\'d1\'bd\'e7\'c3\'e6\'c9\'cf\'cb\'f9\'bf\'b4\'bc\'fb\'b5\'c4\'b6\'ab\'ce\'f7\'b6\'bc\'bd\'d0\'bf\'d8\'bc\'fe\'a1\'a3\
+	1.2 \'ca\'d3\'cd\'bc\
+		\'b7\'b2\'ca\'c7UIView\'c0\'e0\'bc\'b0UIView\'b5\'c4\'d7\'d3\'c0\'e0\'b6\'d4\'cf\'f3\'a3\'ac\'b6\'bc\'ca\'c7\'ca\'d3\'cd\'bc\'b6\'d4\'cf\'f3\'a1\'a3\
+		\'bc\'b8\'ba\'f5\'c8\'ce\'ba\'ce\'d2\'bb\'b8\'f6VC\'b6\'d4\'cf\'f3\'b6\'bc\'d3\'d0\'d2\'bb\'b8\'f6\'ca\'f4\'d0\'d4\'bd\'d0.view\'a3\'ac \'c6\'e4\'c0\'e0\'d0\'cd\'be\'cd\'ca\'c7UIView.(self.view \'a1\'ad.)\
+		\'bf\'d8\'bc\'fe\'be\'cd\'ca\'c7\'ca\'d3\'cd\'bc\'b5\'c4\'d2\'bb\'d6\'d6\'a1\'a3\'b0\'b4\'c5\'a5(UIButton)\'a3\'ac\'b1\'ea\'c7\'a9(UILabel)\'a3\'ac\'bb\'ac\'bf\'e9(UISlider)\'a3\'ac\'bf\'aa\'b9\'d8(UISwitch)\'a1\'a3\'a1\'a3\'a1\'a3\'b6\'bc\'ca\'c7\'ca\'d3\'cd\'bc\
+\
+		[self.view addSubview:label]; \'d2\'e2\'cb\'bc\'ca\'c7\'bd\'ablabel\'ca\'d3\'cd\'bc\'bc\'d3\'c8\'eb\'b5\'bdself.view\'ca\'d3\'cd\'bc\'d6\'d0\'a3\'ac\'ce\'d2\'c3\'c7\'cb\'b5label\'ca\'c7view\'b5\'c4\'d7\'d3\'ca\'d3\'cd\'bc\'a3\'ac\'b7\'b4\'b9\'fd\'c0\'b4\'a3\'acview\'be\'cd\'ca\'c7label\'b5\'c4\'b8\'b8\'ca\'d3\'cd\'bc\'a1\'a3\
+\
+2.  \'ce\'af\'cd\'d0(Delegate)\
+	2.1 \'ca\'b2\'c3\'b4\'ca\'c7\'ce\'af\'cd\'d0\
+		\'d2\'bb\'b8\'f6\'b6\'d4\'cf\'f3(\'b6\'d4\'cf\'f3A)\'ce\'af\'cd\'d0\'c1\'ed\'d2\'bb\'b8\'f6\'b6\'d4\'cf\'f3(\'b6\'d4\'cf\'f3B)\'d7\'f6\'ca\'c2(\'b5\'f7\'d3\'c3\'b7\'bd\'b7\'a8)\'a1\'a3\'ce\'d2\'c3\'c7\'b0\'d1\'b6\'d4\'cf\'f3A\'bd\'d0\'ce\'af\'cd\'d0\'b7\'bd\'a3\'ac\'b6\'d4\'cf\'f3B\'bd\'d0\'b1\'bb\'ce\'af\'cd\'d0\'b7\'bd\'a1\'a3\
+\
+	2.2 UIAlertView\'c0\'e0\
+		2.2.1 \'b6\'a8\'d2\'e5\
+			\'ca\'c7\'d2\'bb\'b8\'f6\'b6\'d4\'bb\'b0\'bf\'f2\'c0\'e0\
+		2.2.2  \'bb\'f9\'b1\'beAPI\
+			UIAlertView *alertView = [[UIAlertView alloc]initWithTitle\'a1\'ad..];\
+			[alertView show];\
+\
+		[Demo1]\
+		\
+	2.3 \'ce\'af\'cd\'d0\'d2\'bb\'b8\'f6\'b6\'d4\'cf\'f3(\'b1\'bb\'ce\'af\'cd\'d0\'b6\'d4\'cf\'f3)\
+		1> \'b9\'e6\'b6\'a8\'b1\'bb\'ce\'af\'cd\'d0\'b6\'d4\'cf\'f3\'d0\'e8\'d2\'aa\'d7\'f6\'b5\'c4\'ca\'c2\
+			\'b6\'a8\'d2\'e5\'ce\'af\'cd\'d0\'d0\'ad\'d2\'e9\'b5\'c4\'b7\'bd\'ca\'bd\'c0\'b4\'b4\'ef\'b5\'bd\'b9\'e6\'b6\'a8\'b5\'c4\'d0\'a7\'b9\'fb\
+				UIAlertViewDelegate\'d0\'ad\'d2\'e9\
+		2> \'b1\'bb\'ce\'af\'cd\'d0\'b6\'d4\'cf\'f3\'c8\'e7\'ba\'ce\'d7\'f6\'d5\'e2\'bc\'fe\'ca\'c2(\'b1\'bb\'ce\'af\'cd\'d0\'b6\'d4\'cf\'f3\'c8\'fd\'b2\'bd\'d7\'df)\
+			1> \'d7\'f1\'ca\'d8\'ce\'af\'cd\'d0\'d0\'ad\'d2\'e9\
+			2> \'ca\'b5\'cf\'d6\'d0\'ad\'d2\'e9\'d6\'d0\'b9\'e6\'b6\'a8\'b5\'c4\'d0\'e8\'d2\'aa\'b5\'c4(\'b2\'bb\'d2\'bb\'b6\'a8\'ca\'c7\'c8\'ab\'b2\'bf)\'b7\'bd\'b7\'a8\
+			3> \'bd\'ab\'d7\'d4\'bc\'ba\'c9\'e8\'d6\'c3\'b3\'c9\'b1\'bb\'ce\'af\'cd\'d0\'b6\'d4\'cf\'f3\
+\
+	2.4 \'ce\'aa\'ca\'b2\'c3\'b4\'ca\'b9\'d3\'c3\'ce\'af\'cd\'d0\'b5\'c4\'d2\'bb\'b8\'f6\'c0\'ed\'d3\'c9\
+		\'bf\'c9\'d2\'d4\'c8\'c3\'bf\'f2\'bc\'dc(\'c8\'e7UIKit)\'d6\'d0\'b5\'c4\'b4\'fa\'c2\'eb\'b5\'f7\'d3\'c3\'ce\'d2\'c3\'c7\'cf\'d6\'d4\'da\'d0\'b4\'b5\'c4\'b4\'fa\'c2\'eb\'a3\'ac\'d5\'e2\'d6\'d6\'b5\'f7\'d3\'c3\'d3\'d0\'d2\'bb\'b8\'f6\'cb\'b5\'b7\'a8\'a3\'ac\'bd\'d0\'bb\'d8\'b5\'f7(callback)\
+		\'c8\'c3UIAlertView\'c0\'b4\'b5\'f7\'d3\'c3\'ce\'d2\'c3\'c7\'b8\'d5\'b8\'d5\'d0\'b4\'ba\'c3\'b5\'c4\'b4\'fa\'c2\'eb\'a3\'ac\'b5\'b1\'d3\'c3\'bb\'a7\'cd\'a8\'b9\'fdUIAlertView\'d1\'a1\'d4\'f1\'c1\'cb\'d1\'a1\'cf\'ee\'ca\'b1\'a3\'ac\'d7\'f6\'b2\'bb\'cd\'ac\'b5\'c4\'b4\'a6\'c0\'ed\'a1\'a3\
+		\'cd\'a8\'cb\'d7\'bd\'b2\'a3\'ac\'be\'cd\'ca\'c7\'bc\'b8\'c4\'ea\'c7\'b0\'b5\'c4\'b4\'fa\'c2\'eb\'b5\'f7\'d3\'c3\'ce\'d2\'cf\'d6\'d4\'da\'d0\'b4\'b5\'c4\'b4\'fa\'c2\'eb\'a1\'a3\
+\
+	2.5 \'ca\'b9\'d3\'c3UIActionSheet\'c0\'e0\'c1\'b7\'cf\'b0\'ce\'af\'cd\'d0\
+		2.5.1 \'ca\'b2\'c3\'b4\'ca\'c7UIActionSheet\
+			 \'ca\'c7\'c0\'e0\'cb\'c6\'d3\'daUIAlertView\'b5\'c4\'ca\'d3\'cd\'bc\'a3\'ac \'bf\'c9\'d2\'d4\'c8\'c3\'d3\'c3\'bb\'a7\'d1\'a1\'d4\'f1\'c4\'b3\'d2\'bb\'b8\'f6\'d1\'a1\'cf\'ee\'a1\'a3\
+		2.5.2  [Demo1]\
+		\
+	\
+\
+	\
+\
+\
+\
+\
+\
+\
+\
+\'b8\'bd\'a3\'ba\
+	\'bf\'c9\'b1\'e4\'b3\'a4\'b2\'ce\'ca\'fd\
+	printf("%d,%d,%d,%d", x, y,z, a);\
+\
+	\
+	\
+		\
+
+\f1 \
+		\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+		\
+		\
+				\
+}

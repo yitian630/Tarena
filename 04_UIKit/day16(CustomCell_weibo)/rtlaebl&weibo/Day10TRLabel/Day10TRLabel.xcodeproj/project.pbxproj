@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		852D20BC19079B98008D1074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852D20BB19079B98008D1074 /* Foundation.framework */; };
+		852D20BE19079B98008D1074 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852D20BD19079B98008D1074 /* CoreGraphics.framework */; };
+		852D20C019079B98008D1074 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852D20BF19079B98008D1074 /* UIKit.framework */; };
+		852D20C619079B98008D1074 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 852D20C419079B98008D1074 /* InfoPlist.strings */; };
+		852D20C819079B98008D1074 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 852D20C719079B98008D1074 /* main.m */; };
+		852D20CC19079B98008D1074 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 852D20CB19079B98008D1074 /* TRAppDelegate.m */; };
+		852D20CF19079B98008D1074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852D20CD19079B98008D1074 /* Main.storyboard */; };
+		852D20D219079B98008D1074 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852D20D119079B98008D1074 /* TRViewController.m */; };
+		852D20D419079B98008D1074 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852D20D319079B98008D1074 /* Images.xcassets */; };
+		852D20DB19079B98008D1074 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852D20DA19079B98008D1074 /* XCTest.framework */; };
+		852D20DC19079B98008D1074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852D20BB19079B98008D1074 /* Foundation.framework */; };
+		852D20DD19079B98008D1074 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852D20BF19079B98008D1074 /* UIKit.framework */; };
+		852D20E519079B98008D1074 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 852D20E319079B98008D1074 /* InfoPlist.strings */; };
+		852D20E719079B98008D1074 /* Day10TRLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 852D20E619079B98008D1074 /* Day10TRLabelTests.m */; };
+		852D20F219079BAA008D1074 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 852D20F119079BAA008D1074 /* RTLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		852D20DE19079B98008D1074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 852D20B019079B98008D1074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 852D20B719079B98008D1074;
+			remoteInfo = Day10TRLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		852D20B819079B98008D1074 /* Day10TRLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day10TRLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		852D20BB19079B98008D1074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		852D20BD19079B98008D1074 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		852D20BF19079B98008D1074 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		852D20C319079B98008D1074 /* Day10TRLabel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day10TRLabel-Info.plist"; sourceTree = "<group>"; };
+		852D20C519079B98008D1074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		852D20C719079B98008D1074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		852D20C919079B98008D1074 /* Day10TRLabel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day10TRLabel-Prefix.pch"; sourceTree = "<group>"; };
+		852D20CA19079B98008D1074 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		852D20CB19079B98008D1074 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		852D20CE19079B98008D1074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		852D20D019079B98008D1074 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
+		852D20D119079B98008D1074 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		852D20D319079B98008D1074 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		852D20D919079B98008D1074 /* Day10TRLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day10TRLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		852D20DA19079B98008D1074 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		852D20E219079B98008D1074 /* Day10TRLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day10TRLabelTests-Info.plist"; sourceTree = "<group>"; };
+		852D20E419079B98008D1074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		852D20E619079B98008D1074 /* Day10TRLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day10TRLabelTests.m; sourceTree = "<group>"; };
+		852D20F019079BAA008D1074 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
+		852D20F119079BAA008D1074 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		852D20B519079B98008D1074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D20BE19079B98008D1074 /* CoreGraphics.framework in Frameworks */,
+				852D20C019079B98008D1074 /* UIKit.framework in Frameworks */,
+				852D20BC19079B98008D1074 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852D20D619079B98008D1074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D20DB19079B98008D1074 /* XCTest.framework in Frameworks */,
+				852D20DD19079B98008D1074 /* UIKit.framework in Frameworks */,
+				852D20DC19079B98008D1074 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		852D20AF19079B98008D1074 = {
+			isa = PBXGroup;
+			children = (
+				852D20C119079B98008D1074 /* Day10TRLabel */,
+				852D20E019079B98008D1074 /* Day10TRLabelTests */,
+				852D20BA19079B98008D1074 /* Frameworks */,
+				852D20B919079B98008D1074 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		852D20B919079B98008D1074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				852D20B819079B98008D1074 /* Day10TRLabel.app */,
+				852D20D919079B98008D1074 /* Day10TRLabelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		852D20BA19079B98008D1074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				852D20BB19079B98008D1074 /* Foundation.framework */,
+				852D20BD19079B98008D1074 /* CoreGraphics.framework */,
+				852D20BF19079B98008D1074 /* UIKit.framework */,
+				852D20DA19079B98008D1074 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		852D20C119079B98008D1074 /* Day10TRLabel */ = {
+			isa = PBXGroup;
+			children = (
+				852D20F019079BAA008D1074 /* RTLabel.h */,
+				852D20F119079BAA008D1074 /* RTLabel.m */,
+				852D20CA19079B98008D1074 /* TRAppDelegate.h */,
+				852D20CB19079B98008D1074 /* TRAppDelegate.m */,
+				852D20CD19079B98008D1074 /* Main.storyboard */,
+				852D20D019079B98008D1074 /* TRViewController.h */,
+				852D20D119079B98008D1074 /* TRViewController.m */,
+				852D20D319079B98008D1074 /* Images.xcassets */,
+				852D20C219079B98008D1074 /* Supporting Files */,
+			);
+			path = Day10TRLabel;
+			sourceTree = "<group>";
+		};
+		852D20C219079B98008D1074 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				852D20C319079B98008D1074 /* Day10TRLabel-Info.plist */,
+				852D20C419079B98008D1074 /* InfoPlist.strings */,
+				852D20C719079B98008D1074 /* main.m */,
+				852D20C919079B98008D1074 /* Day10TRLabel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		852D20E019079B98008D1074 /* Day10TRLabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				852D20E619079B98008D1074 /* Day10TRLabelTests.m */,
+				852D20E119079B98008D1074 /* Supporting Files */,
+			);
+			path = Day10TRLabelTests;
+			sourceTree = "<group>";
+		};
+		852D20E119079B98008D1074 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				852D20E219079B98008D1074 /* Day10TRLabelTests-Info.plist */,
+				852D20E319079B98008D1074 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		852D20B719079B98008D1074 /* Day10TRLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852D20EA19079B98008D1074 /* Build configuration list for PBXNativeTarget "Day10TRLabel" */;
+			buildPhases = (
+				852D20B419079B98008D1074 /* Sources */,
+				852D20B519079B98008D1074 /* Frameworks */,
+				852D20B619079B98008D1074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day10TRLabel;
+			productName = Day10TRLabel;
+			productReference = 852D20B819079B98008D1074 /* Day10TRLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		852D20D819079B98008D1074 /* Day10TRLabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852D20ED19079B98008D1074 /* Build configuration list for PBXNativeTarget "Day10TRLabelTests" */;
+			buildPhases = (
+				852D20D519079B98008D1074 /* Sources */,
+				852D20D619079B98008D1074 /* Frameworks */,
+				852D20D719079B98008D1074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				852D20DF19079B98008D1074 /* PBXTargetDependency */,
+			);
+			name = Day10TRLabelTests;
+			productName = Day10TRLabelTests;
+			productReference = 852D20D919079B98008D1074 /* Day10TRLabelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		852D20B019079B98008D1074 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					852D20D819079B98008D1074 = {
+						TestTargetID = 852D20B719079B98008D1074;
+					};
+				};
+			};
+			buildConfigurationList = 852D20B319079B98008D1074 /* Build configuration list for PBXProject "Day10TRLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 852D20AF19079B98008D1074;
+			productRefGroup = 852D20B919079B98008D1074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				852D20B719079B98008D1074 /* Day10TRLabel */,
+				852D20D819079B98008D1074 /* Day10TRLabelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		852D20B619079B98008D1074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D20D419079B98008D1074 /* Images.xcassets in Resources */,
+				852D20C619079B98008D1074 /* InfoPlist.strings in Resources */,
+				852D20CF19079B98008D1074 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852D20D719079B98008D1074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D20E519079B98008D1074 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		852D20B419079B98008D1074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D20CC19079B98008D1074 /* TRAppDelegate.m in Sources */,
+				852D20C819079B98008D1074 /* main.m in Sources */,
+				852D20F219079BAA008D1074 /* RTLabel.m in Sources */,
+				852D20D219079B98008D1074 /* TRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852D20D519079B98008D1074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D20E719079B98008D1074 /* Day10TRLabelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		852D20DF19079B98008D1074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 852D20B719079B98008D1074 /* Day10TRLabel */;
+			targetProxy = 852D20DE19079B98008D1074 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		852D20C419079B98008D1074 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852D20C519079B98008D1074 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		852D20CD19079B98008D1074 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852D20CE19079B98008D1074 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		852D20E319079B98008D1074 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852D20E419079B98008D1074 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		852D20E819079B98008D1074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		852D20E919079B98008D1074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		852D20EB19079B98008D1074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day10TRLabel/Day10TRLabel-Prefix.pch";
+				INFOPLIST_FILE = "Day10TRLabel/Day10TRLabel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		852D20EC19079B98008D1074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day10TRLabel/Day10TRLabel-Prefix.pch";
+				INFOPLIST_FILE = "Day10TRLabel/Day10TRLabel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		852D20EE19079B98008D1074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day10TRLabel.app/Day10TRLabel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day10TRLabel/Day10TRLabel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day10TRLabelTests/Day10TRLabelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		852D20EF19079B98008D1074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day10TRLabel.app/Day10TRLabel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day10TRLabel/Day10TRLabel-Prefix.pch";
+				INFOPLIST_FILE = "Day10TRLabelTests/Day10TRLabelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		852D20B319079B98008D1074 /* Build configuration list for PBXProject "Day10TRLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852D20E819079B98008D1074 /* Debug */,
+				852D20E919079B98008D1074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852D20EA19079B98008D1074 /* Build configuration list for PBXNativeTarget "Day10TRLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852D20EB19079B98008D1074 /* Debug */,
+				852D20EC19079B98008D1074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		852D20ED19079B98008D1074 /* Build configuration list for PBXNativeTarget "Day10TRLabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852D20EE19079B98008D1074 /* Debug */,
+				852D20EF19079B98008D1074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 852D20B019079B98008D1074 /* Project object */;
+}

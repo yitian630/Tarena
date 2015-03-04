@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8550ACF818E95C0E00ECFE93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550ACF718E95C0E00ECFE93 /* Foundation.framework */; };
+		8550ACFA18E95C0E00ECFE93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550ACF918E95C0E00ECFE93 /* CoreGraphics.framework */; };
+		8550ACFC18E95C0E00ECFE93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550ACFB18E95C0E00ECFE93 /* UIKit.framework */; };
+		8550AD0218E95C0E00ECFE93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8550AD0018E95C0E00ECFE93 /* InfoPlist.strings */; };
+		8550AD0418E95C0E00ECFE93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8550AD0318E95C0E00ECFE93 /* main.m */; };
+		8550AD0818E95C0E00ECFE93 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8550AD0718E95C0E00ECFE93 /* TRAppDelegate.m */; };
+		8550AD0A18E95C0E00ECFE93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8550AD0918E95C0E00ECFE93 /* Images.xcassets */; };
+		8550AD1118E95C0E00ECFE93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550AD1018E95C0E00ECFE93 /* XCTest.framework */; };
+		8550AD1218E95C0E00ECFE93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550ACF718E95C0E00ECFE93 /* Foundation.framework */; };
+		8550AD1318E95C0E00ECFE93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550ACFB18E95C0E00ECFE93 /* UIKit.framework */; };
+		8550AD1B18E95C0E00ECFE93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8550AD1918E95C0E00ECFE93 /* InfoPlist.strings */; };
+		8550AD1D18E95C0E00ECFE93 /* Demo6_LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8550AD1C18E95C0E00ECFE93 /* Demo6_LoginTests.m */; };
+		8550AD2918E95C1700ECFE93 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8550AD2718E95C1700ECFE93 /* TRViewController.m */; };
+		8550AD2A18E95C1700ECFE93 /* TRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8550AD2818E95C1700ECFE93 /* TRViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8550AD1418E95C0E00ECFE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8550ACEC18E95C0E00ECFE93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8550ACF318E95C0E00ECFE93;
+			remoteInfo = Demo6_Login;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8550ACF418E95C0E00ECFE93 /* Demo6_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo6_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8550ACF718E95C0E00ECFE93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8550ACF918E95C0E00ECFE93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8550ACFB18E95C0E00ECFE93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8550ACFF18E95C0E00ECFE93 /* Demo6_Login-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo6_Login-Info.plist"; sourceTree = "<group>"; };
+		8550AD0118E95C0E00ECFE93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8550AD0318E95C0E00ECFE93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8550AD0518E95C0E00ECFE93 /* Demo6_Login-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo6_Login-Prefix.pch"; sourceTree = "<group>"; };
+		8550AD0618E95C0E00ECFE93 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		8550AD0718E95C0E00ECFE93 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		8550AD0918E95C0E00ECFE93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8550AD0F18E95C0E00ECFE93 /* Demo6_LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo6_LoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8550AD1018E95C0E00ECFE93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8550AD1818E95C0E00ECFE93 /* Demo6_LoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo6_LoginTests-Info.plist"; sourceTree = "<group>"; };
+		8550AD1A18E95C0E00ECFE93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8550AD1C18E95C0E00ECFE93 /* Demo6_LoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo6_LoginTests.m; sourceTree = "<group>"; };
+		8550AD2618E95C1700ECFE93 /* TRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
+		8550AD2718E95C1700ECFE93 /* TRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		8550AD2818E95C1700ECFE93 /* TRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8550ACF118E95C0E00ECFE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8550ACFA18E95C0E00ECFE93 /* CoreGraphics.framework in Frameworks */,
+				8550ACFC18E95C0E00ECFE93 /* UIKit.framework in Frameworks */,
+				8550ACF818E95C0E00ECFE93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8550AD0C18E95C0E00ECFE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8550AD1118E95C0E00ECFE93 /* XCTest.framework in Frameworks */,
+				8550AD1318E95C0E00ECFE93 /* UIKit.framework in Frameworks */,
+				8550AD1218E95C0E00ECFE93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8550ACEB18E95C0E00ECFE93 = {
+			isa = PBXGroup;
+			children = (
+				8550ACFD18E95C0E00ECFE93 /* Demo6_Login */,
+				8550AD1618E95C0E00ECFE93 /* Demo6_LoginTests */,
+				8550ACF618E95C0E00ECFE93 /* Frameworks */,
+				8550ACF518E95C0E00ECFE93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8550ACF518E95C0E00ECFE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8550ACF418E95C0E00ECFE93 /* Demo6_Login.app */,
+				8550AD0F18E95C0E00ECFE93 /* Demo6_LoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8550ACF618E95C0E00ECFE93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8550ACF718E95C0E00ECFE93 /* Foundation.framework */,
+				8550ACF918E95C0E00ECFE93 /* CoreGraphics.framework */,
+				8550ACFB18E95C0E00ECFE93 /* UIKit.framework */,
+				8550AD1018E95C0E00ECFE93 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8550ACFD18E95C0E00ECFE93 /* Demo6_Login */ = {
+			isa = PBXGroup;
+			children = (
+				8550AD0618E95C0E00ECFE93 /* TRAppDelegate.h */,
+				8550AD0718E95C0E00ECFE93 /* TRAppDelegate.m */,
+				8550AD2618E95C1700ECFE93 /* TRViewController.h */,
+				8550AD2718E95C1700ECFE93 /* TRViewController.m */,
+				8550AD2818E95C1700ECFE93 /* TRViewController.xib */,
+				8550AD0918E95C0E00ECFE93 /* Images.xcassets */,
+				8550ACFE18E95C0E00ECFE93 /* Supporting Files */,
+			);
+			path = Demo6_Login;
+			sourceTree = "<group>";
+		};
+		8550ACFE18E95C0E00ECFE93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8550ACFF18E95C0E00ECFE93 /* Demo6_Login-Info.plist */,
+				8550AD0018E95C0E00ECFE93 /* InfoPlist.strings */,
+				8550AD0318E95C0E00ECFE93 /* main.m */,
+				8550AD0518E95C0E00ECFE93 /* Demo6_Login-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8550AD1618E95C0E00ECFE93 /* Demo6_LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				8550AD1C18E95C0E00ECFE93 /* Demo6_LoginTests.m */,
+				8550AD1718E95C0E00ECFE93 /* Supporting Files */,
+			);
+			path = Demo6_LoginTests;
+			sourceTree = "<group>";
+		};
+		8550AD1718E95C0E00ECFE93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8550AD1818E95C0E00ECFE93 /* Demo6_LoginTests-Info.plist */,
+				8550AD1918E95C0E00ECFE93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8550ACF318E95C0E00ECFE93 /* Demo6_Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8550AD2018E95C0E00ECFE93 /* Build configuration list for PBXNativeTarget "Demo6_Login" */;
+			buildPhases = (
+				8550ACF018E95C0E00ECFE93 /* Sources */,
+				8550ACF118E95C0E00ECFE93 /* Frameworks */,
+				8550ACF218E95C0E00ECFE93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo6_Login;
+			productName = Demo6_Login;
+			productReference = 8550ACF418E95C0E00ECFE93 /* Demo6_Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8550AD0E18E95C0E00ECFE93 /* Demo6_LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8550AD2318E95C0E00ECFE93 /* Build configuration list for PBXNativeTarget "Demo6_LoginTests" */;
+			buildPhases = (
+				8550AD0B18E95C0E00ECFE93 /* Sources */,
+				8550AD0C18E95C0E00ECFE93 /* Frameworks */,
+				8550AD0D18E95C0E00ECFE93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8550AD1518E95C0E00ECFE93 /* PBXTargetDependency */,
+			);
+			name = Demo6_LoginTests;
+			productName = Demo6_LoginTests;
+			productReference = 8550AD0F18E95C0E00ECFE93 /* Demo6_LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8550ACEC18E95C0E00ECFE93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					8550AD0E18E95C0E00ECFE93 = {
+						TestTargetID = 8550ACF318E95C0E00ECFE93;
+					};
+				};
+			};
+			buildConfigurationList = 8550ACEF18E95C0E00ECFE93 /* Build configuration list for PBXProject "Demo6_Login" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8550ACEB18E95C0E00ECFE93;
+			productRefGroup = 8550ACF518E95C0E00ECFE93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8550ACF318E95C0E00ECFE93 /* Demo6_Login */,
+				8550AD0E18E95C0E00ECFE93 /* Demo6_LoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8550ACF218E95C0E00ECFE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8550AD0218E95C0E00ECFE93 /* InfoPlist.strings in Resources */,
+				8550AD2A18E95C1700ECFE93 /* TRViewController.xib in Resources */,
+				8550AD0A18E95C0E00ECFE93 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8550AD0D18E95C0E00ECFE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8550AD1B18E95C0E00ECFE93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8550ACF018E95C0E00ECFE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8550AD0818E95C0E00ECFE93 /* TRAppDelegate.m in Sources */,
+				8550AD0418E95C0E00ECFE93 /* main.m in Sources */,
+				8550AD2918E95C1700ECFE93 /* TRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8550AD0B18E95C0E00ECFE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8550AD1D18E95C0E00ECFE93 /* Demo6_LoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8550AD1518E95C0E00ECFE93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8550ACF318E95C0E00ECFE93 /* Demo6_Login */;
+			targetProxy = 8550AD1418E95C0E00ECFE93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8550AD0018E95C0E00ECFE93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8550AD0118E95C0E00ECFE93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8550AD1918E95C0E00ECFE93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8550AD1A18E95C0E00ECFE93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8550AD1E18E95C0E00ECFE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8550AD1F18E95C0E00ECFE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8550AD2118E95C0E00ECFE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo6_Login/Demo6_Login-Prefix.pch";
+				INFOPLIST_FILE = "Demo6_Login/Demo6_Login-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8550AD2218E95C0E00ECFE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo6_Login/Demo6_Login-Prefix.pch";
+				INFOPLIST_FILE = "Demo6_Login/Demo6_Login-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8550AD2418E95C0E00ECFE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo6_Login.app/Demo6_Login";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo6_Login/Demo6_Login-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Demo6_LoginTests/Demo6_LoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8550AD2518E95C0E00ECFE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo6_Login.app/Demo6_Login";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo6_Login/Demo6_Login-Prefix.pch";
+				INFOPLIST_FILE = "Demo6_LoginTests/Demo6_LoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8550ACEF18E95C0E00ECFE93 /* Build configuration list for PBXProject "Demo6_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8550AD1E18E95C0E00ECFE93 /* Debug */,
+				8550AD1F18E95C0E00ECFE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8550AD2018E95C0E00ECFE93 /* Build configuration list for PBXNativeTarget "Demo6_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8550AD2118E95C0E00ECFE93 /* Debug */,
+				8550AD2218E95C0E00ECFE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8550AD2318E95C0E00ECFE93 /* Build configuration list for PBXNativeTarget "Demo6_LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8550AD2418E95C0E00ECFE93 /* Debug */,
+				8550AD2518E95C0E00ECFE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8550ACEC18E95C0E00ECFE93 /* Project object */;
+}

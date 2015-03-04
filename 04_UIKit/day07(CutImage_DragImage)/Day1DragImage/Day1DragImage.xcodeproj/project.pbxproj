@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85233A7418F53014007F9224 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85233A7318F53014007F9224 /* Foundation.framework */; };
+		85233A7618F53014007F9224 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85233A7518F53014007F9224 /* CoreGraphics.framework */; };
+		85233A7818F53014007F9224 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85233A7718F53014007F9224 /* UIKit.framework */; };
+		85233A7E18F53014007F9224 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85233A7C18F53014007F9224 /* InfoPlist.strings */; };
+		85233A8018F53014007F9224 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85233A7F18F53014007F9224 /* main.m */; };
+		85233A8418F53014007F9224 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85233A8318F53014007F9224 /* TRAppDelegate.m */; };
+		85233A8718F53014007F9224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85233A8518F53014007F9224 /* Main.storyboard */; };
+		85233A8A18F53014007F9224 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85233A8918F53014007F9224 /* TRViewController.m */; };
+		85233A8C18F53014007F9224 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85233A8B18F53014007F9224 /* Images.xcassets */; };
+		85233A9318F53014007F9224 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85233A9218F53014007F9224 /* XCTest.framework */; };
+		85233A9418F53014007F9224 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85233A7318F53014007F9224 /* Foundation.framework */; };
+		85233A9518F53014007F9224 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85233A7718F53014007F9224 /* UIKit.framework */; };
+		85233A9D18F53014007F9224 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85233A9B18F53014007F9224 /* InfoPlist.strings */; };
+		85233A9F18F53014007F9224 /* Day1DragImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85233A9E18F53014007F9224 /* Day1DragImageTests.m */; };
+		85233AAB18F53056007F9224 /* bullet_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 85233AA818F53056007F9224 /* bullet_0.png */; };
+		85233AAC18F53056007F9224 /* bullet_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 85233AA918F53056007F9224 /* bullet_1.png */; };
+		85233AAD18F53056007F9224 /* bullet_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 85233AAA18F53056007F9224 /* bullet_2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85233A9618F53014007F9224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85233A6818F53014007F9224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85233A6F18F53014007F9224;
+			remoteInfo = Day1DragImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85233A7018F53014007F9224 /* Day1DragImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day1DragImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85233A7318F53014007F9224 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85233A7518F53014007F9224 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85233A7718F53014007F9224 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85233A7B18F53014007F9224 /* Day1DragImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day1DragImage-Info.plist"; sourceTree = "<group>"; };
+		85233A7D18F53014007F9224 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85233A7F18F53014007F9224 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85233A8118F53014007F9224 /* Day1DragImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day1DragImage-Prefix.pch"; sourceTree = "<group>"; };
+		85233A8218F53014007F9224 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		85233A8318F53014007F9224 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		85233A8618F53014007F9224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85233A8818F53014007F9224 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
+		85233A8918F53014007F9224 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		85233A8B18F53014007F9224 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85233A9118F53014007F9224 /* Day1DragImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day1DragImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85233A9218F53014007F9224 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		85233A9A18F53014007F9224 /* Day1DragImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day1DragImageTests-Info.plist"; sourceTree = "<group>"; };
+		85233A9C18F53014007F9224 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85233A9E18F53014007F9224 /* Day1DragImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day1DragImageTests.m; sourceTree = "<group>"; };
+		85233AA818F53056007F9224 /* bullet_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet_0.png; sourceTree = "<group>"; };
+		85233AA918F53056007F9224 /* bullet_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet_1.png; sourceTree = "<group>"; };
+		85233AAA18F53056007F9224 /* bullet_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet_2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85233A6D18F53014007F9224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85233A7618F53014007F9224 /* CoreGraphics.framework in Frameworks */,
+				85233A7818F53014007F9224 /* UIKit.framework in Frameworks */,
+				85233A7418F53014007F9224 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85233A8E18F53014007F9224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85233A9318F53014007F9224 /* XCTest.framework in Frameworks */,
+				85233A9518F53014007F9224 /* UIKit.framework in Frameworks */,
+				85233A9418F53014007F9224 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85233A6718F53014007F9224 = {
+			isa = PBXGroup;
+			children = (
+				85233A7918F53014007F9224 /* Day1DragImage */,
+				85233A9818F53014007F9224 /* Day1DragImageTests */,
+				85233A7218F53014007F9224 /* Frameworks */,
+				85233A7118F53014007F9224 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85233A7118F53014007F9224 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85233A7018F53014007F9224 /* Day1DragImage.app */,
+				85233A9118F53014007F9224 /* Day1DragImageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85233A7218F53014007F9224 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85233A7318F53014007F9224 /* Foundation.framework */,
+				85233A7518F53014007F9224 /* CoreGraphics.framework */,
+				85233A7718F53014007F9224 /* UIKit.framework */,
+				85233A9218F53014007F9224 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85233A7918F53014007F9224 /* Day1DragImage */ = {
+			isa = PBXGroup;
+			children = (
+				85233AA818F53056007F9224 /* bullet_0.png */,
+				85233AA918F53056007F9224 /* bullet_1.png */,
+				85233AAA18F53056007F9224 /* bullet_2.png */,
+				85233A8218F53014007F9224 /* TRAppDelegate.h */,
+				85233A8318F53014007F9224 /* TRAppDelegate.m */,
+				85233A8518F53014007F9224 /* Main.storyboard */,
+				85233A8818F53014007F9224 /* TRViewController.h */,
+				85233A8918F53014007F9224 /* TRViewController.m */,
+				85233A8B18F53014007F9224 /* Images.xcassets */,
+				85233A7A18F53014007F9224 /* Supporting Files */,
+			);
+			path = Day1DragImage;
+			sourceTree = "<group>";
+		};
+		85233A7A18F53014007F9224 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85233A7B18F53014007F9224 /* Day1DragImage-Info.plist */,
+				85233A7C18F53014007F9224 /* InfoPlist.strings */,
+				85233A7F18F53014007F9224 /* main.m */,
+				85233A8118F53014007F9224 /* Day1DragImage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85233A9818F53014007F9224 /* Day1DragImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				85233A9E18F53014007F9224 /* Day1DragImageTests.m */,
+				85233A9918F53014007F9224 /* Supporting Files */,
+			);
+			path = Day1DragImageTests;
+			sourceTree = "<group>";
+		};
+		85233A9918F53014007F9224 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85233A9A18F53014007F9224 /* Day1DragImageTests-Info.plist */,
+				85233A9B18F53014007F9224 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85233A6F18F53014007F9224 /* Day1DragImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85233AA218F53014007F9224 /* Build configuration list for PBXNativeTarget "Day1DragImage" */;
+			buildPhases = (
+				85233A6C18F53014007F9224 /* Sources */,
+				85233A6D18F53014007F9224 /* Frameworks */,
+				85233A6E18F53014007F9224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day1DragImage;
+			productName = Day1DragImage;
+			productReference = 85233A7018F53014007F9224 /* Day1DragImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85233A9018F53014007F9224 /* Day1DragImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85233AA518F53014007F9224 /* Build configuration list for PBXNativeTarget "Day1DragImageTests" */;
+			buildPhases = (
+				85233A8D18F53014007F9224 /* Sources */,
+				85233A8E18F53014007F9224 /* Frameworks */,
+				85233A8F18F53014007F9224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85233A9718F53014007F9224 /* PBXTargetDependency */,
+			);
+			name = Day1DragImageTests;
+			productName = Day1DragImageTests;
+			productReference = 85233A9118F53014007F9224 /* Day1DragImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85233A6818F53014007F9224 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					85233A9018F53014007F9224 = {
+						TestTargetID = 85233A6F18F53014007F9224;
+					};
+				};
+			};
+			buildConfigurationList = 85233A6B18F53014007F9224 /* Build configuration list for PBXProject "Day1DragImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85233A6718F53014007F9224;
+			productRefGroup = 85233A7118F53014007F9224 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85233A6F18F53014007F9224 /* Day1DragImage */,
+				85233A9018F53014007F9224 /* Day1DragImageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85233A6E18F53014007F9224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85233AAD18F53056007F9224 /* bullet_2.png in Resources */,
+				85233A8C18F53014007F9224 /* Images.xcassets in Resources */,
+				85233AAC18F53056007F9224 /* bullet_1.png in Resources */,
+				85233A7E18F53014007F9224 /* InfoPlist.strings in Resources */,
+				85233AAB18F53056007F9224 /* bullet_0.png in Resources */,
+				85233A8718F53014007F9224 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85233A8F18F53014007F9224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85233A9D18F53014007F9224 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85233A6C18F53014007F9224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85233A8418F53014007F9224 /* TRAppDelegate.m in Sources */,
+				85233A8018F53014007F9224 /* main.m in Sources */,
+				85233A8A18F53014007F9224 /* TRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85233A8D18F53014007F9224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85233A9F18F53014007F9224 /* Day1DragImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85233A9718F53014007F9224 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85233A6F18F53014007F9224 /* Day1DragImage */;
+			targetProxy = 85233A9618F53014007F9224 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85233A7C18F53014007F9224 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85233A7D18F53014007F9224 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		85233A8518F53014007F9224 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85233A8618F53014007F9224 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85233A9B18F53014007F9224 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85233A9C18F53014007F9224 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85233AA018F53014007F9224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85233AA118F53014007F9224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85233AA318F53014007F9224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1DragImage/Day1DragImage-Prefix.pch";
+				INFOPLIST_FILE = "Day1DragImage/Day1DragImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85233AA418F53014007F9224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1DragImage/Day1DragImage-Prefix.pch";
+				INFOPLIST_FILE = "Day1DragImage/Day1DragImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		85233AA618F53014007F9224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day1DragImage.app/Day1DragImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1DragImage/Day1DragImage-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day1DragImageTests/Day1DragImageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		85233AA718F53014007F9224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day1DragImage.app/Day1DragImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1DragImage/Day1DragImage-Prefix.pch";
+				INFOPLIST_FILE = "Day1DragImageTests/Day1DragImageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85233A6B18F53014007F9224 /* Build configuration list for PBXProject "Day1DragImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85233AA018F53014007F9224 /* Debug */,
+				85233AA118F53014007F9224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85233AA218F53014007F9224 /* Build configuration list for PBXNativeTarget "Day1DragImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85233AA318F53014007F9224 /* Debug */,
+				85233AA418F53014007F9224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85233AA518F53014007F9224 /* Build configuration list for PBXNativeTarget "Day1DragImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85233AA618F53014007F9224 /* Debug */,
+				85233AA718F53014007F9224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85233A6818F53014007F9224 /* Project object */;
+}

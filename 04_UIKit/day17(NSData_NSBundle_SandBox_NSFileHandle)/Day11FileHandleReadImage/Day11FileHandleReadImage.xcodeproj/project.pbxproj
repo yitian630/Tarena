@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8544E46B1908ED9C00ADB14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544E46A1908ED9C00ADB14B /* Foundation.framework */; };
+		8544E46D1908ED9C00ADB14B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544E46C1908ED9C00ADB14B /* CoreGraphics.framework */; };
+		8544E46F1908ED9C00ADB14B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544E46E1908ED9C00ADB14B /* UIKit.framework */; };
+		8544E4751908ED9C00ADB14B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8544E4731908ED9C00ADB14B /* InfoPlist.strings */; };
+		8544E4771908ED9C00ADB14B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544E4761908ED9C00ADB14B /* main.m */; };
+		8544E47B1908ED9C00ADB14B /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544E47A1908ED9C00ADB14B /* TRAppDelegate.m */; };
+		8544E47E1908ED9C00ADB14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8544E47C1908ED9C00ADB14B /* Main.storyboard */; };
+		8544E4811908ED9C00ADB14B /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544E4801908ED9C00ADB14B /* TRViewController.m */; };
+		8544E4831908ED9C00ADB14B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8544E4821908ED9C00ADB14B /* Images.xcassets */; };
+		8544E48A1908ED9C00ADB14B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544E4891908ED9C00ADB14B /* XCTest.framework */; };
+		8544E48B1908ED9C00ADB14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544E46A1908ED9C00ADB14B /* Foundation.framework */; };
+		8544E48C1908ED9C00ADB14B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8544E46E1908ED9C00ADB14B /* UIKit.framework */; };
+		8544E4941908ED9C00ADB14B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8544E4921908ED9C00ADB14B /* InfoPlist.strings */; };
+		8544E4961908ED9C00ADB14B /* Day11FileHandleReadImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544E4951908ED9C00ADB14B /* Day11FileHandleReadImageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8544E48D1908ED9C00ADB14B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8544E45F1908ED9C00ADB14B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8544E4661908ED9C00ADB14B;
+			remoteInfo = Day11FileHandleReadImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8544E4671908ED9C00ADB14B /* Day11FileHandleReadImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day11FileHandleReadImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8544E46A1908ED9C00ADB14B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8544E46C1908ED9C00ADB14B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8544E46E1908ED9C00ADB14B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8544E4721908ED9C00ADB14B /* Day11FileHandleReadImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day11FileHandleReadImage-Info.plist"; sourceTree = "<group>"; };
+		8544E4741908ED9C00ADB14B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8544E4761908ED9C00ADB14B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8544E4781908ED9C00ADB14B /* Day11FileHandleReadImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day11FileHandleReadImage-Prefix.pch"; sourceTree = "<group>"; };
+		8544E4791908ED9C00ADB14B /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		8544E47A1908ED9C00ADB14B /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		8544E47D1908ED9C00ADB14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8544E47F1908ED9C00ADB14B /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
+		8544E4801908ED9C00ADB14B /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		8544E4821908ED9C00ADB14B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8544E4881908ED9C00ADB14B /* Day11FileHandleReadImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day11FileHandleReadImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8544E4891908ED9C00ADB14B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8544E4911908ED9C00ADB14B /* Day11FileHandleReadImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day11FileHandleReadImageTests-Info.plist"; sourceTree = "<group>"; };
+		8544E4931908ED9C00ADB14B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8544E4951908ED9C00ADB14B /* Day11FileHandleReadImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day11FileHandleReadImageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8544E4641908ED9C00ADB14B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8544E46D1908ED9C00ADB14B /* CoreGraphics.framework in Frameworks */,
+				8544E46F1908ED9C00ADB14B /* UIKit.framework in Frameworks */,
+				8544E46B1908ED9C00ADB14B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8544E4851908ED9C00ADB14B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8544E48A1908ED9C00ADB14B /* XCTest.framework in Frameworks */,
+				8544E48C1908ED9C00ADB14B /* UIKit.framework in Frameworks */,
+				8544E48B1908ED9C00ADB14B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8544E45E1908ED9C00ADB14B = {
+			isa = PBXGroup;
+			children = (
+				8544E4701908ED9C00ADB14B /* Day11FileHandleReadImage */,
+				8544E48F1908ED9C00ADB14B /* Day11FileHandleReadImageTests */,
+				8544E4691908ED9C00ADB14B /* Frameworks */,
+				8544E4681908ED9C00ADB14B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8544E4681908ED9C00ADB14B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8544E4671908ED9C00ADB14B /* Day11FileHandleReadImage.app */,
+				8544E4881908ED9C00ADB14B /* Day11FileHandleReadImageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8544E4691908ED9C00ADB14B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8544E46A1908ED9C00ADB14B /* Foundation.framework */,
+				8544E46C1908ED9C00ADB14B /* CoreGraphics.framework */,
+				8544E46E1908ED9C00ADB14B /* UIKit.framework */,
+				8544E4891908ED9C00ADB14B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8544E4701908ED9C00ADB14B /* Day11FileHandleReadImage */ = {
+			isa = PBXGroup;
+			children = (
+				8544E4791908ED9C00ADB14B /* TRAppDelegate.h */,
+				8544E47A1908ED9C00ADB14B /* TRAppDelegate.m */,
+				8544E47C1908ED9C00ADB14B /* Main.storyboard */,
+				8544E47F1908ED9C00ADB14B /* TRViewController.h */,
+				8544E4801908ED9C00ADB14B /* TRViewController.m */,
+				8544E4821908ED9C00ADB14B /* Images.xcassets */,
+				8544E4711908ED9C00ADB14B /* Supporting Files */,
+			);
+			path = Day11FileHandleReadImage;
+			sourceTree = "<group>";
+		};
+		8544E4711908ED9C00ADB14B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8544E4721908ED9C00ADB14B /* Day11FileHandleReadImage-Info.plist */,
+				8544E4731908ED9C00ADB14B /* InfoPlist.strings */,
+				8544E4761908ED9C00ADB14B /* main.m */,
+				8544E4781908ED9C00ADB14B /* Day11FileHandleReadImage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8544E48F1908ED9C00ADB14B /* Day11FileHandleReadImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				8544E4951908ED9C00ADB14B /* Day11FileHandleReadImageTests.m */,
+				8544E4901908ED9C00ADB14B /* Supporting Files */,
+			);
+			path = Day11FileHandleReadImageTests;
+			sourceTree = "<group>";
+		};
+		8544E4901908ED9C00ADB14B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8544E4911908ED9C00ADB14B /* Day11FileHandleReadImageTests-Info.plist */,
+				8544E4921908ED9C00ADB14B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8544E4661908ED9C00ADB14B /* Day11FileHandleReadImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8544E4991908ED9C00ADB14B /* Build configuration list for PBXNativeTarget "Day11FileHandleReadImage" */;
+			buildPhases = (
+				8544E4631908ED9C00ADB14B /* Sources */,
+				8544E4641908ED9C00ADB14B /* Frameworks */,
+				8544E4651908ED9C00ADB14B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day11FileHandleReadImage;
+			productName = Day11FileHandleReadImage;
+			productReference = 8544E4671908ED9C00ADB14B /* Day11FileHandleReadImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8544E4871908ED9C00ADB14B /* Day11FileHandleReadImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8544E49C1908ED9C00ADB14B /* Build configuration list for PBXNativeTarget "Day11FileHandleReadImageTests" */;
+			buildPhases = (
+				8544E4841908ED9C00ADB14B /* Sources */,
+				8544E4851908ED9C00ADB14B /* Frameworks */,
+				8544E4861908ED9C00ADB14B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8544E48E1908ED9C00ADB14B /* PBXTargetDependency */,
+			);
+			name = Day11FileHandleReadImageTests;
+			productName = Day11FileHandleReadImageTests;
+			productReference = 8544E4881908ED9C00ADB14B /* Day11FileHandleReadImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8544E45F1908ED9C00ADB14B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					8544E4871908ED9C00ADB14B = {
+						TestTargetID = 8544E4661908ED9C00ADB14B;
+					};
+				};
+			};
+			buildConfigurationList = 8544E4621908ED9C00ADB14B /* Build configuration list for PBXProject "Day11FileHandleReadImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8544E45E1908ED9C00ADB14B;
+			productRefGroup = 8544E4681908ED9C00ADB14B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8544E4661908ED9C00ADB14B /* Day11FileHandleReadImage */,
+				8544E4871908ED9C00ADB14B /* Day11FileHandleReadImageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8544E4651908ED9C00ADB14B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8544E4831908ED9C00ADB14B /* Images.xcassets in Resources */,
+				8544E4751908ED9C00ADB14B /* InfoPlist.strings in Resources */,
+				8544E47E1908ED9C00ADB14B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8544E4861908ED9C00ADB14B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8544E4941908ED9C00ADB14B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8544E4631908ED9C00ADB14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8544E47B1908ED9C00ADB14B /* TRAppDelegate.m in Sources */,
+				8544E4771908ED9C00ADB14B /* main.m in Sources */,
+				8544E4811908ED9C00ADB14B /* TRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8544E4841908ED9C00ADB14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8544E4961908ED9C00ADB14B /* Day11FileHandleReadImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8544E48E1908ED9C00ADB14B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8544E4661908ED9C00ADB14B /* Day11FileHandleReadImage */;
+			targetProxy = 8544E48D1908ED9C00ADB14B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8544E4731908ED9C00ADB14B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8544E4741908ED9C00ADB14B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8544E47C1908ED9C00ADB14B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8544E47D1908ED9C00ADB14B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8544E4921908ED9C00ADB14B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8544E4931908ED9C00ADB14B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8544E4971908ED9C00ADB14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8544E4981908ED9C00ADB14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8544E49A1908ED9C00ADB14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day11FileHandleReadImage/Day11FileHandleReadImage-Prefix.pch";
+				INFOPLIST_FILE = "Day11FileHandleReadImage/Day11FileHandleReadImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8544E49B1908ED9C00ADB14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day11FileHandleReadImage/Day11FileHandleReadImage-Prefix.pch";
+				INFOPLIST_FILE = "Day11FileHandleReadImage/Day11FileHandleReadImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8544E49D1908ED9C00ADB14B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day11FileHandleReadImage.app/Day11FileHandleReadImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day11FileHandleReadImage/Day11FileHandleReadImage-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day11FileHandleReadImageTests/Day11FileHandleReadImageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8544E49E1908ED9C00ADB14B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day11FileHandleReadImage.app/Day11FileHandleReadImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day11FileHandleReadImage/Day11FileHandleReadImage-Prefix.pch";
+				INFOPLIST_FILE = "Day11FileHandleReadImageTests/Day11FileHandleReadImageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8544E4621908ED9C00ADB14B /* Build configuration list for PBXProject "Day11FileHandleReadImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8544E4971908ED9C00ADB14B /* Debug */,
+				8544E4981908ED9C00ADB14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8544E4991908ED9C00ADB14B /* Build configuration list for PBXNativeTarget "Day11FileHandleReadImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8544E49A1908ED9C00ADB14B /* Debug */,
+				8544E49B1908ED9C00ADB14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8544E49C1908ED9C00ADB14B /* Build configuration list for PBXNativeTarget "Day11FileHandleReadImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8544E49D1908ED9C00ADB14B /* Debug */,
+				8544E49E1908ED9C00ADB14B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8544E45F1908ED9C00ADB14B /* Project object */;
+}

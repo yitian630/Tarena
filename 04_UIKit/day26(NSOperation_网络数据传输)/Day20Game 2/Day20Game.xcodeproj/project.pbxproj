@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		852AB761191B563C00789333 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AB760191B563C00789333 /* Foundation.framework */; };
+		852AB763191B563C00789333 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AB762191B563C00789333 /* CoreGraphics.framework */; };
+		852AB765191B563C00789333 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AB764191B563C00789333 /* UIKit.framework */; };
+		852AB76B191B563C00789333 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 852AB769191B563C00789333 /* InfoPlist.strings */; };
+		852AB76D191B563C00789333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AB76C191B563C00789333 /* main.m */; };
+		852AB771191B563C00789333 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AB770191B563C00789333 /* TRAppDelegate.m */; };
+		852AB774191B563C00789333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852AB772191B563C00789333 /* Main.storyboard */; };
+		852AB777191B563C00789333 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AB776191B563C00789333 /* TRViewController.m */; };
+		852AB779191B563C00789333 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852AB778191B563C00789333 /* Images.xcassets */; };
+		852AB780191B563C00789333 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AB77F191B563C00789333 /* XCTest.framework */; };
+		852AB781191B563C00789333 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AB760191B563C00789333 /* Foundation.framework */; };
+		852AB782191B563C00789333 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AB764191B563C00789333 /* UIKit.framework */; };
+		852AB78A191B563C00789333 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 852AB788191B563C00789333 /* InfoPlist.strings */; };
+		852AB78C191B563C00789333 /* Day20GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AB78B191B563C00789333 /* Day20GameTests.m */; };
+		852AB797191B569100789333 /* TRbrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AB796191B569100789333 /* TRbrick.m */; };
+		852AB79A191B56AE00789333 /* TRRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AB799191B56AE00789333 /* TRRow.m */; };
+		852AB79D191B56BD00789333 /* TRGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AB79C191B56BD00789333 /* TRGame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		852AB783191B563C00789333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 852AB755191B563C00789333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 852AB75C191B563C00789333;
+			remoteInfo = Day20Game;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		852AB75D191B563C00789333 /* Day20Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day20Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		852AB760191B563C00789333 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		852AB762191B563C00789333 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		852AB764191B563C00789333 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		852AB768191B563C00789333 /* Day20Game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day20Game-Info.plist"; sourceTree = "<group>"; };
+		852AB76A191B563C00789333 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		852AB76C191B563C00789333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		852AB76E191B563C00789333 /* Day20Game-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day20Game-Prefix.pch"; sourceTree = "<group>"; };
+		852AB76F191B563C00789333 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		852AB770191B563C00789333 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		852AB773191B563C00789333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		852AB775191B563C00789333 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
+		852AB776191B563C00789333 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		852AB778191B563C00789333 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		852AB77E191B563C00789333 /* Day20GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day20GameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		852AB77F191B563C00789333 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		852AB787191B563C00789333 /* Day20GameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day20GameTests-Info.plist"; sourceTree = "<group>"; };
+		852AB789191B563C00789333 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		852AB78B191B563C00789333 /* Day20GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day20GameTests.m; sourceTree = "<group>"; };
+		852AB795191B569100789333 /* TRbrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRbrick.h; sourceTree = "<group>"; };
+		852AB796191B569100789333 /* TRbrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRbrick.m; sourceTree = "<group>"; };
+		852AB798191B56AE00789333 /* TRRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRow.h; sourceTree = "<group>"; };
+		852AB799191B56AE00789333 /* TRRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRow.m; sourceTree = "<group>"; };
+		852AB79B191B56BD00789333 /* TRGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGame.h; sourceTree = "<group>"; };
+		852AB79C191B56BD00789333 /* TRGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGame.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		852AB75A191B563C00789333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852AB763191B563C00789333 /* CoreGraphics.framework in Frameworks */,
+				852AB765191B563C00789333 /* UIKit.framework in Frameworks */,
+				852AB761191B563C00789333 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852AB77B191B563C00789333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852AB780191B563C00789333 /* XCTest.framework in Frameworks */,
+				852AB782191B563C00789333 /* UIKit.framework in Frameworks */,
+				852AB781191B563C00789333 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		852AB754191B563C00789333 = {
+			isa = PBXGroup;
+			children = (
+				852AB766191B563C00789333 /* Day20Game */,
+				852AB785191B563C00789333 /* Day20GameTests */,
+				852AB75F191B563C00789333 /* Frameworks */,
+				852AB75E191B563C00789333 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		852AB75E191B563C00789333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				852AB75D191B563C00789333 /* Day20Game.app */,
+				852AB77E191B563C00789333 /* Day20GameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		852AB75F191B563C00789333 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				852AB760191B563C00789333 /* Foundation.framework */,
+				852AB762191B563C00789333 /* CoreGraphics.framework */,
+				852AB764191B563C00789333 /* UIKit.framework */,
+				852AB77F191B563C00789333 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		852AB766191B563C00789333 /* Day20Game */ = {
+			isa = PBXGroup;
+			children = (
+				852AB76F191B563C00789333 /* TRAppDelegate.h */,
+				852AB770191B563C00789333 /* TRAppDelegate.m */,
+				852AB772191B563C00789333 /* Main.storyboard */,
+				852AB79B191B56BD00789333 /* TRGame.h */,
+				852AB79C191B56BD00789333 /* TRGame.m */,
+				852AB798191B56AE00789333 /* TRRow.h */,
+				852AB799191B56AE00789333 /* TRRow.m */,
+				852AB795191B569100789333 /* TRbrick.h */,
+				852AB796191B569100789333 /* TRbrick.m */,
+				852AB775191B563C00789333 /* TRViewController.h */,
+				852AB776191B563C00789333 /* TRViewController.m */,
+				852AB778191B563C00789333 /* Images.xcassets */,
+				852AB767191B563C00789333 /* Supporting Files */,
+			);
+			path = Day20Game;
+			sourceTree = "<group>";
+		};
+		852AB767191B563C00789333 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				852AB768191B563C00789333 /* Day20Game-Info.plist */,
+				852AB769191B563C00789333 /* InfoPlist.strings */,
+				852AB76C191B563C00789333 /* main.m */,
+				852AB76E191B563C00789333 /* Day20Game-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		852AB785191B563C00789333 /* Day20GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				852AB78B191B563C00789333 /* Day20GameTests.m */,
+				852AB786191B563C00789333 /* Supporting Files */,
+			);
+			path = Day20GameTests;
+			sourceTree = "<group>";
+		};
+		852AB786191B563C00789333 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				852AB787191B563C00789333 /* Day20GameTests-Info.plist */,
+				852AB788191B563C00789333 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		852AB75C191B563C00789333 /* Day20Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852AB78F191B563C00789333 /* Build configuration list for PBXNativeTarget "Day20Game" */;
+			buildPhases = (
+				852AB759191B563C00789333 /* Sources */,
+				852AB75A191B563C00789333 /* Frameworks */,
+				852AB75B191B563C00789333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day20Game;
+			productName = Day20Game;
+			productReference = 852AB75D191B563C00789333 /* Day20Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		852AB77D191B563C00789333 /* Day20GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852AB792191B563C00789333 /* Build configuration list for PBXNativeTarget "Day20GameTests" */;
+			buildPhases = (
+				852AB77A191B563C00789333 /* Sources */,
+				852AB77B191B563C00789333 /* Frameworks */,
+				852AB77C191B563C00789333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				852AB784191B563C00789333 /* PBXTargetDependency */,
+			);
+			name = Day20GameTests;
+			productName = Day20GameTests;
+			productReference = 852AB77E191B563C00789333 /* Day20GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		852AB755191B563C00789333 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					852AB77D191B563C00789333 = {
+						TestTargetID = 852AB75C191B563C00789333;
+					};
+				};
+			};
+			buildConfigurationList = 852AB758191B563C00789333 /* Build configuration list for PBXProject "Day20Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 852AB754191B563C00789333;
+			productRefGroup = 852AB75E191B563C00789333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				852AB75C191B563C00789333 /* Day20Game */,
+				852AB77D191B563C00789333 /* Day20GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		852AB75B191B563C00789333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852AB779191B563C00789333 /* Images.xcassets in Resources */,
+				852AB76B191B563C00789333 /* InfoPlist.strings in Resources */,
+				852AB774191B563C00789333 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852AB77C191B563C00789333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852AB78A191B563C00789333 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		852AB759191B563C00789333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852AB771191B563C00789333 /* TRAppDelegate.m in Sources */,
+				852AB79D191B56BD00789333 /* TRGame.m in Sources */,
+				852AB797191B569100789333 /* TRbrick.m in Sources */,
+				852AB76D191B563C00789333 /* main.m in Sources */,
+				852AB79A191B56AE00789333 /* TRRow.m in Sources */,
+				852AB777191B563C00789333 /* TRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852AB77A191B563C00789333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852AB78C191B563C00789333 /* Day20GameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		852AB784191B563C00789333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 852AB75C191B563C00789333 /* Day20Game */;
+			targetProxy = 852AB783191B563C00789333 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		852AB769191B563C00789333 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852AB76A191B563C00789333 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		852AB772191B563C00789333 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852AB773191B563C00789333 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		852AB788191B563C00789333 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852AB789191B563C00789333 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		852AB78D191B563C00789333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		852AB78E191B563C00789333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		852AB790191B563C00789333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day20Game/Day20Game-Prefix.pch";
+				INFOPLIST_FILE = "Day20Game/Day20Game-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		852AB791191B563C00789333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day20Game/Day20Game-Prefix.pch";
+				INFOPLIST_FILE = "Day20Game/Day20Game-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		852AB793191B563C00789333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day20Game.app/Day20Game";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day20Game/Day20Game-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day20GameTests/Day20GameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		852AB794191B563C00789333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day20Game.app/Day20Game";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day20Game/Day20Game-Prefix.pch";
+				INFOPLIST_FILE = "Day20GameTests/Day20GameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		852AB758191B563C00789333 /* Build configuration list for PBXProject "Day20Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852AB78D191B563C00789333 /* Debug */,
+				852AB78E191B563C00789333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852AB78F191B563C00789333 /* Build configuration list for PBXNativeTarget "Day20Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852AB790191B563C00789333 /* Debug */,
+				852AB791191B563C00789333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		852AB792191B563C00789333 /* Build configuration list for PBXNativeTarget "Day20GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852AB793191B563C00789333 /* Debug */,
+				852AB794191B563C00789333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 852AB755191B563C00789333 /* Project object */;
+}
