@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg936\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs72 \cf2 \'ca\'ae\'d2\'bb\'a1\'a2\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb\
+1.\'d3\'c3\'d6\'b8\'d5\'eb\'b4\'e6\'b4\'a2\'b4\'fa\'c2\'eb\'c7\'f8\'ba\'af\'ca\'fd\'b5\'c4\'b5\'d8\'d6\'b7\'a3\'ac\'cb\'f9\'d3\'d0\'b5\'c4\'ba\'af\'ca\'fd\'b6\'bc\'ca\'c7\'d6\'b8\'d5\'eb\'a3\'ac\'ba\'af\'ca\'fd\'c3\'fb\'be\'cd\'ca\'c7\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb\'a1\'a32.\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb\'bf\'c9\'d2\'d4\'d7\'f6\'b2\'ce\'ca\'fd\'a3\'ac\'bf\'c9\'d2\'d4\'b4\'ab\'c8\'eb\'a1\'a3\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb\'b5\'c4\'b2\'ce\'ca\'fd\'c0\'e0\'d0\'cd\'ba\'cd\'b7\'b5\'bb\'d8\'c0\'e0\'d0\'cd\'cd\'ea\'c8\'ab\'d2\'bb\'d6\'c2\'a1\'a3\
+eg:func();//\'c6\'d5\'cd\'a8\'b5\'c4\'ba\'af\'ca\'fd\'b5\'f7\'d3\'c3\
+\pard\pardeftab720
+
+\f1 \cf2    //
+\f0 \'ba\'af\'ca\'fd\'ca\'c7\'d5\'bc\'c4\'da\'b4\'e6\'b5\'c4
+\f1 \
+   printf("func:%p &func:%p\\n",func,&func);
+\f2 \
+
+\f1 //
+\f0 \'b6\'a8\'d2\'e5\'d2\'bb\'b8\'f6\'d6\'b8\'d5\'eb\'b1\'e4\'c1\'bf\'d6\'b8\'cf\'f2\'ba\'af\'ca\'fd
+\f1 \
+//void
+\f0 \'b7\'b5\'bb\'d8\'d6\'b5\'c0\'e0\'d0\'cd
+\f1  void
+\f0 \'b2\'ce\'ca\'fd\'c0\'e0\'d0\'cd
+\f1 \
+  //void(*func_ptr)(void) 
+\f0 \'ba\'af\'ca\'fd\'c0\'e0\'d0\'cd
+\f1 \
+  //func_ptr
+\f0 \'ba\'af\'ca\'fd\'b5\'c4\'b1\'e4\'c1\'bf\'c3\'fb
+\f1 \
+  void(*func_ptr)(void) = func;\
+  void(*func_ptr2)(int) = func2;\
+  func_ptr();//
+\f0 \'cd\'a8\'b9\'fd\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb\'b5\'f7\'d3\'c3\'ba\'af\'ca\'fd
+\f1 \
+  func_ptr2(3);//
+\f0 \'cd\'a8\'b9\'fd\'ba\'af\'ca\'fd\'d6\'b8\'d5\'eb\'b5\'f7\'d3\'c3\'d3\'d0\'b2\'ce\'ba\'af\'ca\'fd
+\f2 \
+\pard\pardeftab720
+
+\f0 \cf2 \'ca\'ae\'b6\'fe\'a1\'a2
+\f1 void*\
+1.
+\f0 \'b4\'fa\'b1\'ed\'c8\'ce\'d2\'e2\'c0\'e0\'d0\'cd\'b5\'c4\'d6\'b8\'d5\'eb\'a3\'ac
+\f1 malloc
+\f0 \'b7\'d6\'c5\'e4\'b6\'d1\'c4\'da\'b4\'e6\'ca\'b1\'a3\'ac\'d3\'c9\'d3\'da\'ce\'de\'b7\'a8\'c8\'b7\'b6\'a8\'c4\'da\'b4\'e6\'b4\'e6\'b4\'a2\'c0\'e0\'d0\'cd\'a3\'ac\'cb\'f9\'d2\'d4\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3
+\f1 void*
+\f0 \'b4\'fa\'b1\'ed\'c8\'ce\'d2\'e2\'d6\'b8\'d5\'eb\'c0\'e0\'d0\'cd\'a1\'a3
+\f1 \
+2.
+\f0 \'b2\'bb\'c4\'dc\'d6\'b1\'bd\'d3\'b6\'d4
+\f1 void*
+\f0 \'d6\'b8\'d5\'eb\'bd\'f8\'d0\'d0
+\f1 *
+\f0 \'b2\'d9\'d7\'f7\'a3\'ac\'bf\'c9\'d2\'d4\'bd\'f8\'d0\'d0\'c0\'e0\'d0\'cd\'d7\'aa\'bb\'bb\'a3\'ac\'c8\'bb\'ba\'f3\'d4\'d9\'bd\'f8\'d0\'d0
+\f1 *
+\f0 \'b2\'d9\'d7\'f7\'a1\'a3
+\f1 \
+3.void*
+\f0 \'c4\'dc\'bd\'f8\'d0\'d0\'bc\'d3\'bc\'f5\'b2\'d9\'d7\'f7\'a3\'ac\'b5\'ab\'d2\'d4
+\f1 1
+\f0 \'d7\'d6\'bd\'da\'ce\'aa\'b5\'a5\'ce\'bb\'bd\'f8\'d0\'d0\'d4\'cb\'cb\'e3\'a3\'ac\'cb\'f9\'d2\'d4\'cb\'b5\'cf\'eb\'cf\'f2
+\f1 void
+\f0 \'bd\'f8\'d0\'d0\'bc\'d3\'a1\'a2\'bc\'f5\'b2\'d9\'d7\'f7\'a3\'ac\'d7\'ee\'ba\'c3\'cf\'c8\'d7\'aa\'bb\'bb\'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\'a1\'a3
+\f2 \
+}

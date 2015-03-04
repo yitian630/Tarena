@@ -1,0 +1,191 @@
+指针
+
+练习题
+
+1.1 写出下列程序的运行结果
+（1）
+   #include<stdio.h>
+   void main(){
+     int a,b;
+     int *pointer_1,*pointer_2;
+     a=100;b=10;
+     pointer_1=&a;
+     pointer_2=&b;
+     printf("%d,%d\n",a,b);    //100,10
+     printf("%d,%d\n",*pointer_1,*pointer_2);   //100,10    
+   }
+   
+ （2）
+    #include<stdio.h>
+    void main(){
+      char string[]="I Love China";
+      printf("%s\n",string);   //I Love China
+    }
+    
+ （3）
+    #include<stdio.h>
+    void main(){
+      char *a="I Love China";
+      int i;
+      printf("The sixth character is %c\n",a[5]);  //The sixth character is e
+      for(i=0;a[i]!='\0';i++){
+        printf("%c",a[i]);  //I Love China
+      }
+      printf("\n");
+    }
+    
+ （4）
+    #include<stdio.h>
+    void main(){
+      float l,s,r,v;
+      printf("input radius:");
+      scanf("%f",&r);
+      l=2.0*PI*r;
+      s=PI*r*r;
+      v=4.0/3*PI*r*r*r;
+      printf("l=%10.4f\ns=%10.4f\nv=10.4f\n",l,s,v);  //r=3.0  l=18.8495  s=28.2743
+    }                                                 //v=
+    
+ （5）
+    #include<stdio.h>
+    #define R 3.0
+    #define PI 3.1415926
+    #define L 2*PI*R
+    #define S PI*R*R
+    void main(){
+      printf("L=%f\nS=%f\n",L,S);
+    }
+    
+   
+1.2 考查点:简单的应用指针变量
+    题目：输入a和b两个整数，按先大后小的顺序输出a和b.
+    
+    代码如下：
+    #include<stdio.h>
+    void main(){
+      int *p1,*p2,*p;
+      int a,b;
+      scanf("%d,%d",&a,&b);
+      p1=&a,p2=&b;
+      if(a<b){
+        p=p1;
+        p1=p2;
+        p2=p;
+      }
+      printf("a=%d,b=%d\n",a,b);
+      printf("max=%d,min=%d\n",*p1,*p2);
+    }
+    
+1.3 考查点:指针变量作为函数参数
+    题目1:输入a和b两个整数，按先大后小的顺序输出a和b.
+    
+    代码如下：
+    #include<stdio.h>
+    void main(){
+     void swap(int *p1,*p2);
+     int a,b;
+     int *pointer_1,*pointer_2;
+     scanf("%d,%d",&a,&b);
+     pointer_1=&a;
+     pointer_2=&b;
+     if(a<b){
+        swap(pointer_1,pointer_2);
+     }
+     printf("\n%d,%d\n",a,b);
+    }
+    void swap(int *p1,*p2){
+      int temp;
+      temp=*p1;
+      *p1=*p2;
+      *p2=temp;
+      
+
+1.4 考查点:通过数组名计算数组元素地址
+    题目1:有一数组a[10],要求输出数组中的全部元素。
+    
+    代码如下：
+    #include<stdio.h>
+    void main(){
+      int a[10];
+      int *p,i;
+      for(i=0;i<10;i++){
+        scanf("%d",&a[i]);
+      }
+      printf("\n");
+      for(p=a;p<(a+10);p++){
+        printf("%d",*p);
+      }
+      printf("\n");
+    }
+      
+      
+1.5 考查点：字符串的定义及简单应用
+    题目1:将字符串a复制为字符串b.
+    
+    代码如下：
+    #include<stdio.h>
+    void main(){
+      char a[]="I am a boy";
+      char b[20];
+      int i;
+      for(i=0;*(a+i)!='\0',i++){
+        *(b+i)=*(a+i);
+        *(b+i)='\0';
+        printf("string a is:%s\n",a);
+        printf("stirng b is:");
+        for(i=0;b[i]!='\0';i++){
+          printf("%c",b[i]);
+        }
+        printf("\n");
+      }
+    }
+    
+    
+1.6 输入10个整数，将其中最小的数与第一个数对换，
+    把最大的数与最后一个数对换。写3个函数：
+    1、输入10个整数； 
+    2、进行处理；
+    3、输出10个数；
+    要求：用指针方法处理
+    
+    
+1.7 有n个整数，使前面各数顺序向后移m个位置，最后
+    m个数变成最前面m个数。写一函数实现以上功能，
+    在主函数中输入n个整数和输出调整后的n个数。
+    要求：用指针方法处理
+    
+    
+1.8 写一函数，求一字符串的长度。在main函数中
+    输入此字符串，并输出其长度。
+    要求：用指针方法处理
+    
+    
+1.9 输入一行字符，找出其中的大写字母、小写字母、
+    空格、数字及其它字符多少？
+    要求：用指针方法处理
+    
+    
+1.10 在主函数中输入10个等长的字符串，用另一函数
+     对它们排序，然后在主函数输出这10个已排序
+     好的字符串。
+     要求：用指针方法处理
+     
+     
+1.11 一个班4个学生，5门课程。
+     1.求每门课程的平均分；
+     2.找出有2门以上课程不及格的学生，输出他们的
+       学号和全部课程成绩及平均成绩； 
+     3.找出平均成绩在90分以上或全部课程成绩在85分
+       以上的学生。
+     分别编3个函数实现以上3个要求。
+     
+     
+1.12 按n个数按输入时顺序的逆序排列，用函数实现。
+     要求：用指针方法处理
+     
+1.13 将一个5*5的矩阵中最大的元素放在中心，4个角
+     分别放4个最小的元素(顺序为从左到右，从上到下顺序依次
+     从小到大存放)，写一函数实现。用main函数调用 
+    
+     
+      
