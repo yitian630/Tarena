@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8579E35C1929A65F00BE0174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E35B1929A65F00BE0174 /* Foundation.framework */; };
+		8579E35E1929A65F00BE0174 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E35D1929A65F00BE0174 /* CoreGraphics.framework */; };
+		8579E3601929A65F00BE0174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E35F1929A65F00BE0174 /* UIKit.framework */; };
+		8579E3661929A65F00BE0174 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3641929A65F00BE0174 /* InfoPlist.strings */; };
+		8579E3681929A65F00BE0174 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3671929A65F00BE0174 /* main.m */; };
+		8579E36C1929A65F00BE0174 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579E36B1929A65F00BE0174 /* TRAppDelegate.m */; };
+		8579E36F1929A65F00BE0174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8579E36D1929A65F00BE0174 /* Main.storyboard */; };
+		8579E3721929A65F00BE0174 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3711929A65F00BE0174 /* TRViewController.m */; };
+		8579E3741929A65F00BE0174 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3731929A65F00BE0174 /* Images.xcassets */; };
+		8579E37B1929A65F00BE0174 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E37A1929A65F00BE0174 /* XCTest.framework */; };
+		8579E37C1929A65F00BE0174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E35B1929A65F00BE0174 /* Foundation.framework */; };
+		8579E37D1929A65F00BE0174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E35F1929A65F00BE0174 /* UIKit.framework */; };
+		8579E3851929A65F00BE0174 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3831929A65F00BE0174 /* InfoPlist.strings */; };
+		8579E3871929A65F00BE0174 /* Day1WeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3861929A65F00BE0174 /* Day1WeiboTests.m */; };
+		8579E3DD1929A69900BE0174 /* _weibo_api_8h_source.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3931929A69900BE0174 /* _weibo_api_8h_source.html */; };
+		8579E3DE1929A69900BE0174 /* _weibo_api_object_8h_source.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3941929A69900BE0174 /* _weibo_api_object_8h_source.html */; };
+		8579E3DF1929A69900BE0174 /* annotated.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3951929A69900BE0174 /* annotated.html */; };
+		8579E3E01929A69900BE0174 /* annotated.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3961929A69900BE0174 /* annotated.js */; };
+		8579E3E11929A69900BE0174 /* bc_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3971929A69900BE0174 /* bc_s.png */; };
+		8579E3E21929A69900BE0174 /* bdwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3981929A69900BE0174 /* bdwn.png */; };
+		8579E3E31929A69900BE0174 /* class_weibo_api-members.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3991929A69900BE0174 /* class_weibo_api-members.html */; };
+		8579E3E41929A69900BE0174 /* class_weibo_api_object-members.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E39A1929A69900BE0174 /* class_weibo_api_object-members.html */; };
+		8579E3E51929A69900BE0174 /* classes.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E39B1929A69900BE0174 /* classes.html */; };
+		8579E3E61929A69900BE0174 /* closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E39C1929A69900BE0174 /* closed.png */; };
+		8579E3E71929A69900BE0174 /* dir_6537656865ee3923719aa1a57f584d1d.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E39D1929A69900BE0174 /* dir_6537656865ee3923719aa1a57f584d1d.html */; };
+		8579E3E81929A69900BE0174 /* doxygen.css in Resources */ = {isa = PBXBuildFile; fileRef = 8579E39E1929A69900BE0174 /* doxygen.css */; };
+		8579E3E91929A69900BE0174 /* doxygen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E39F1929A69900BE0174 /* doxygen.png */; };
+		8579E3EA1929A69900BE0174 /* dynsections.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3A01929A69900BE0174 /* dynsections.js */; };
+		8579E3EB1929A69900BE0174 /* ftv2blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A11929A69900BE0174 /* ftv2blank.png */; };
+		8579E3EC1929A69900BE0174 /* ftv2cl.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A21929A69900BE0174 /* ftv2cl.png */; };
+		8579E3ED1929A69900BE0174 /* ftv2doc.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A31929A69900BE0174 /* ftv2doc.png */; };
+		8579E3EE1929A69900BE0174 /* ftv2folderclosed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A41929A69900BE0174 /* ftv2folderclosed.png */; };
+		8579E3EF1929A69900BE0174 /* ftv2folderopen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A51929A69900BE0174 /* ftv2folderopen.png */; };
+		8579E3F01929A69900BE0174 /* ftv2lastnode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A61929A69900BE0174 /* ftv2lastnode.png */; };
+		8579E3F11929A69900BE0174 /* ftv2link.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A71929A69900BE0174 /* ftv2link.png */; };
+		8579E3F21929A69900BE0174 /* ftv2mlastnode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A81929A69900BE0174 /* ftv2mlastnode.png */; };
+		8579E3F31929A69900BE0174 /* ftv2mnode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3A91929A69900BE0174 /* ftv2mnode.png */; };
+		8579E3F41929A69900BE0174 /* ftv2mo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3AA1929A69900BE0174 /* ftv2mo.png */; };
+		8579E3F51929A69900BE0174 /* ftv2node.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3AB1929A69900BE0174 /* ftv2node.png */; };
+		8579E3F61929A69900BE0174 /* ftv2ns.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3AC1929A69900BE0174 /* ftv2ns.png */; };
+		8579E3F71929A69900BE0174 /* ftv2plastnode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3AD1929A69900BE0174 /* ftv2plastnode.png */; };
+		8579E3F81929A69900BE0174 /* ftv2pnode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3AE1929A69900BE0174 /* ftv2pnode.png */; };
+		8579E3F91929A69900BE0174 /* ftv2splitbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3AF1929A69900BE0174 /* ftv2splitbar.png */; };
+		8579E3FA1929A69900BE0174 /* ftv2vertline.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B01929A69900BE0174 /* ftv2vertline.png */; };
+		8579E3FB1929A69900BE0174 /* functions.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B11929A69900BE0174 /* functions.html */; };
+		8579E3FC1929A69900BE0174 /* functions_func.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B21929A69900BE0174 /* functions_func.html */; };
+		8579E3FD1929A69900BE0174 /* functions_prop.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B31929A69900BE0174 /* functions_prop.html */; };
+		8579E3FE1929A69900BE0174 /* functions_vars.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B41929A69900BE0174 /* functions_vars.html */; };
+		8579E3FF1929A69900BE0174 /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B51929A69900BE0174 /* hierarchy.html */; };
+		8579E4001929A69900BE0174 /* hierarchy.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3B61929A69900BE0174 /* hierarchy.js */; };
+		8579E4011929A69900BE0174 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B71929A69900BE0174 /* icon.png */; };
+		8579E4021929A69900BE0174 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B81929A69900BE0174 /* index.html */; };
+		8579E4031929A69900BE0174 /* interface_weibo_api.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3B91929A69900BE0174 /* interface_weibo_api.html */; };
+		8579E4041929A69900BE0174 /* interface_weibo_api.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3BA1929A69900BE0174 /* interface_weibo_api.js */; };
+		8579E4051929A69900BE0174 /* interface_weibo_api.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3BB1929A69900BE0174 /* interface_weibo_api.png */; };
+		8579E4061929A69900BE0174 /* interface_weibo_api_object.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3BC1929A69900BE0174 /* interface_weibo_api_object.html */; };
+		8579E4071929A69900BE0174 /* interface_weibo_api_object.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3BD1929A69900BE0174 /* interface_weibo_api_object.js */; };
+		8579E4081929A69900BE0174 /* interface_weibo_api_object.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3BE1929A69900BE0174 /* interface_weibo_api_object.png */; };
+		8579E4091929A69900BE0174 /* jquery.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3BF1929A69900BE0174 /* jquery.js */; };
+		8579E40A1929A69900BE0174 /* nav_f.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3C01929A69900BE0174 /* nav_f.png */; };
+		8579E40B1929A69900BE0174 /* nav_g.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3C11929A69900BE0174 /* nav_g.png */; };
+		8579E40C1929A69900BE0174 /* nav_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3C21929A69900BE0174 /* nav_h.png */; };
+		8579E40D1929A69900BE0174 /* navtree.css in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3C31929A69900BE0174 /* navtree.css */; };
+		8579E40E1929A69900BE0174 /* navtree.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3C41929A69900BE0174 /* navtree.js */; };
+		8579E40F1929A69900BE0174 /* navtreeindex0.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3C51929A69900BE0174 /* navtreeindex0.js */; };
+		8579E4101929A69900BE0174 /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3C61929A69900BE0174 /* open.png */; };
+		8579E4111929A69900BE0174 /* protocol_weibo_auth_delegate-p-members.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3C71929A69900BE0174 /* protocol_weibo_auth_delegate-p-members.html */; };
+		8579E4121929A69900BE0174 /* protocol_weibo_auth_delegate-p.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3C81929A69900BE0174 /* protocol_weibo_auth_delegate-p.html */; };
+		8579E4131929A69900BE0174 /* protocol_weibo_auth_delegate-p.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3C91929A69900BE0174 /* protocol_weibo_auth_delegate-p.js */; };
+		8579E4141929A69900BE0174 /* protocol_weibo_auth_delegate-p.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3CA1929A69900BE0174 /* protocol_weibo_auth_delegate-p.png */; };
+		8579E4151929A69900BE0174 /* protocol_weibo_request_delegate-p-members.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3CB1929A69900BE0174 /* protocol_weibo_request_delegate-p-members.html */; };
+		8579E4161929A69900BE0174 /* protocol_weibo_request_delegate-p.html in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3CC1929A69900BE0174 /* protocol_weibo_request_delegate-p.html */; };
+		8579E4171929A69900BE0174 /* protocol_weibo_request_delegate-p.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3CD1929A69900BE0174 /* protocol_weibo_request_delegate-p.js */; };
+		8579E4181929A69900BE0174 /* protocol_weibo_request_delegate-p.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3CE1929A69900BE0174 /* protocol_weibo_request_delegate-p.png */; };
+		8579E4191929A69900BE0174 /* resize.js in Sources */ = {isa = PBXBuildFile; fileRef = 8579E3CF1929A69900BE0174 /* resize.js */; };
+		8579E41A1929A69900BE0174 /* sync_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3D01929A69900BE0174 /* sync_off.png */; };
+		8579E41B1929A69900BE0174 /* sync_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3D11929A69900BE0174 /* sync_on.png */; };
+		8579E41C1929A69900BE0174 /* tab_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3D21929A69900BE0174 /* tab_a.png */; };
+		8579E41D1929A69900BE0174 /* tab_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3D31929A69900BE0174 /* tab_b.png */; };
+		8579E41E1929A69900BE0174 /* tab_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3D41929A69900BE0174 /* tab_h.png */; };
+		8579E41F1929A69900BE0174 /* tab_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3D51929A69900BE0174 /* tab_s.png */; };
+		8579E4201929A69900BE0174 /* tabs.css in Resources */ = {isa = PBXBuildFile; fileRef = 8579E3D61929A69900BE0174 /* tabs.css */; };
+		8579E4211929A69900BE0174 /* libTCWeiboSDK-arm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E3D81929A69900BE0174 /* libTCWeiboSDK-arm.a */; };
+		8579E4221929A69900BE0174 /* libTCWeiboSDK-i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E3D91929A69900BE0174 /* libTCWeiboSDK-i386.a */; };
+		8579E4231929A69900BE0174 /* libTCWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E3DA1929A69900BE0174 /* libTCWeiboSDK.a */; };
+		8579E4271929A6DE00BE0174 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E4241929A6DE00BE0174 /* Security.framework */; };
+		8579E4281929A6DE00BE0174 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E4251929A6DE00BE0174 /* Accounts.framework */; };
+		8579E4291929A6DE00BE0174 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8579E4261929A6DE00BE0174 /* Social.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8579E37E1929A65F00BE0174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8579E3501929A65F00BE0174 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8579E3571929A65F00BE0174;
+			remoteInfo = Day1Weibo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8579E3581929A65F00BE0174 /* Day1Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day1Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8579E35B1929A65F00BE0174 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8579E35D1929A65F00BE0174 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8579E35F1929A65F00BE0174 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8579E3631929A65F00BE0174 /* Day1Weibo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day1Weibo-Info.plist"; sourceTree = "<group>"; };
+		8579E3651929A65F00BE0174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8579E3671929A65F00BE0174 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8579E3691929A65F00BE0174 /* Day1Weibo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day1Weibo-Prefix.pch"; sourceTree = "<group>"; };
+		8579E36A1929A65F00BE0174 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		8579E36B1929A65F00BE0174 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
+		8579E36E1929A65F00BE0174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8579E3701929A65F00BE0174 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
+		8579E3711929A65F00BE0174 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		8579E3731929A65F00BE0174 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8579E3791929A65F00BE0174 /* Day1WeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day1WeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8579E37A1929A65F00BE0174 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8579E3821929A65F00BE0174 /* Day1WeiboTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day1WeiboTests-Info.plist"; sourceTree = "<group>"; };
+		8579E3841929A65F00BE0174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8579E3861929A65F00BE0174 /* Day1WeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day1WeiboTests.m; sourceTree = "<group>"; };
+		8579E3931929A69900BE0174 /* _weibo_api_8h_source.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _weibo_api_8h_source.html; sourceTree = "<group>"; };
+		8579E3941929A69900BE0174 /* _weibo_api_object_8h_source.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _weibo_api_object_8h_source.html; sourceTree = "<group>"; };
+		8579E3951929A69900BE0174 /* annotated.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = annotated.html; sourceTree = "<group>"; };
+		8579E3961929A69900BE0174 /* annotated.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = annotated.js; sourceTree = "<group>"; };
+		8579E3971929A69900BE0174 /* bc_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bc_s.png; sourceTree = "<group>"; };
+		8579E3981929A69900BE0174 /* bdwn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdwn.png; sourceTree = "<group>"; };
+		8579E3991929A69900BE0174 /* class_weibo_api-members.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "class_weibo_api-members.html"; sourceTree = "<group>"; };
+		8579E39A1929A69900BE0174 /* class_weibo_api_object-members.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "class_weibo_api_object-members.html"; sourceTree = "<group>"; };
+		8579E39B1929A69900BE0174 /* classes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = classes.html; sourceTree = "<group>"; };
+		8579E39C1929A69900BE0174 /* closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed.png; sourceTree = "<group>"; };
+		8579E39D1929A69900BE0174 /* dir_6537656865ee3923719aa1a57f584d1d.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dir_6537656865ee3923719aa1a57f584d1d.html; sourceTree = "<group>"; };
+		8579E39E1929A69900BE0174 /* doxygen.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = doxygen.css; sourceTree = "<group>"; };
+		8579E39F1929A69900BE0174 /* doxygen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doxygen.png; sourceTree = "<group>"; };
+		8579E3A01929A69900BE0174 /* dynsections.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dynsections.js; sourceTree = "<group>"; };
+		8579E3A11929A69900BE0174 /* ftv2blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2blank.png; sourceTree = "<group>"; };
+		8579E3A21929A69900BE0174 /* ftv2cl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2cl.png; sourceTree = "<group>"; };
+		8579E3A31929A69900BE0174 /* ftv2doc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2doc.png; sourceTree = "<group>"; };
+		8579E3A41929A69900BE0174 /* ftv2folderclosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2folderclosed.png; sourceTree = "<group>"; };
+		8579E3A51929A69900BE0174 /* ftv2folderopen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2folderopen.png; sourceTree = "<group>"; };
+		8579E3A61929A69900BE0174 /* ftv2lastnode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2lastnode.png; sourceTree = "<group>"; };
+		8579E3A71929A69900BE0174 /* ftv2link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2link.png; sourceTree = "<group>"; };
+		8579E3A81929A69900BE0174 /* ftv2mlastnode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2mlastnode.png; sourceTree = "<group>"; };
+		8579E3A91929A69900BE0174 /* ftv2mnode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2mnode.png; sourceTree = "<group>"; };
+		8579E3AA1929A69900BE0174 /* ftv2mo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2mo.png; sourceTree = "<group>"; };
+		8579E3AB1929A69900BE0174 /* ftv2node.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2node.png; sourceTree = "<group>"; };
+		8579E3AC1929A69900BE0174 /* ftv2ns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2ns.png; sourceTree = "<group>"; };
+		8579E3AD1929A69900BE0174 /* ftv2plastnode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2plastnode.png; sourceTree = "<group>"; };
+		8579E3AE1929A69900BE0174 /* ftv2pnode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2pnode.png; sourceTree = "<group>"; };
+		8579E3AF1929A69900BE0174 /* ftv2splitbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2splitbar.png; sourceTree = "<group>"; };
+		8579E3B01929A69900BE0174 /* ftv2vertline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ftv2vertline.png; sourceTree = "<group>"; };
+		8579E3B11929A69900BE0174 /* functions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = functions.html; sourceTree = "<group>"; };
+		8579E3B21929A69900BE0174 /* functions_func.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = functions_func.html; sourceTree = "<group>"; };
+		8579E3B31929A69900BE0174 /* functions_prop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = functions_prop.html; sourceTree = "<group>"; };
+		8579E3B41929A69900BE0174 /* functions_vars.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = functions_vars.html; sourceTree = "<group>"; };
+		8579E3B51929A69900BE0174 /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hierarchy.html; sourceTree = "<group>"; };
+		8579E3B61929A69900BE0174 /* hierarchy.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hierarchy.js; sourceTree = "<group>"; };
+		8579E3B71929A69900BE0174 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8579E3B81929A69900BE0174 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		8579E3B91929A69900BE0174 /* interface_weibo_api.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = interface_weibo_api.html; sourceTree = "<group>"; };
+		8579E3BA1929A69900BE0174 /* interface_weibo_api.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = interface_weibo_api.js; sourceTree = "<group>"; };
+		8579E3BB1929A69900BE0174 /* interface_weibo_api.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interface_weibo_api.png; sourceTree = "<group>"; };
+		8579E3BC1929A69900BE0174 /* interface_weibo_api_object.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = interface_weibo_api_object.html; sourceTree = "<group>"; };
+		8579E3BD1929A69900BE0174 /* interface_weibo_api_object.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = interface_weibo_api_object.js; sourceTree = "<group>"; };
+		8579E3BE1929A69900BE0174 /* interface_weibo_api_object.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interface_weibo_api_object.png; sourceTree = "<group>"; };
+		8579E3BF1929A69900BE0174 /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		8579E3C01929A69900BE0174 /* nav_f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_f.png; sourceTree = "<group>"; };
+		8579E3C11929A69900BE0174 /* nav_g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_g.png; sourceTree = "<group>"; };
+		8579E3C21929A69900BE0174 /* nav_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_h.png; sourceTree = "<group>"; };
+		8579E3C31929A69900BE0174 /* navtree.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = navtree.css; sourceTree = "<group>"; };
+		8579E3C41929A69900BE0174 /* navtree.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = navtree.js; sourceTree = "<group>"; };
+		8579E3C51929A69900BE0174 /* navtreeindex0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = navtreeindex0.js; sourceTree = "<group>"; };
+		8579E3C61929A69900BE0174 /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		8579E3C71929A69900BE0174 /* protocol_weibo_auth_delegate-p-members.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "protocol_weibo_auth_delegate-p-members.html"; sourceTree = "<group>"; };
+		8579E3C81929A69900BE0174 /* protocol_weibo_auth_delegate-p.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "protocol_weibo_auth_delegate-p.html"; sourceTree = "<group>"; };
+		8579E3C91929A69900BE0174 /* protocol_weibo_auth_delegate-p.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "protocol_weibo_auth_delegate-p.js"; sourceTree = "<group>"; };
+		8579E3CA1929A69900BE0174 /* protocol_weibo_auth_delegate-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "protocol_weibo_auth_delegate-p.png"; sourceTree = "<group>"; };
+		8579E3CB1929A69900BE0174 /* protocol_weibo_request_delegate-p-members.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "protocol_weibo_request_delegate-p-members.html"; sourceTree = "<group>"; };
+		8579E3CC1929A69900BE0174 /* protocol_weibo_request_delegate-p.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "protocol_weibo_request_delegate-p.html"; sourceTree = "<group>"; };
+		8579E3CD1929A69900BE0174 /* protocol_weibo_request_delegate-p.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "protocol_weibo_request_delegate-p.js"; sourceTree = "<group>"; };
+		8579E3CE1929A69900BE0174 /* protocol_weibo_request_delegate-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "protocol_weibo_request_delegate-p.png"; sourceTree = "<group>"; };
+		8579E3CF1929A69900BE0174 /* resize.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = resize.js; sourceTree = "<group>"; };
+		8579E3D01929A69900BE0174 /* sync_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sync_off.png; sourceTree = "<group>"; };
+		8579E3D11929A69900BE0174 /* sync_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sync_on.png; sourceTree = "<group>"; };
+		8579E3D21929A69900BE0174 /* tab_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_a.png; sourceTree = "<group>"; };
+		8579E3D31929A69900BE0174 /* tab_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_b.png; sourceTree = "<group>"; };
+		8579E3D41929A69900BE0174 /* tab_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_h.png; sourceTree = "<group>"; };
+		8579E3D51929A69900BE0174 /* tab_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_s.png; sourceTree = "<group>"; };
+		8579E3D61929A69900BE0174 /* tabs.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tabs.css; sourceTree = "<group>"; };
+		8579E3D81929A69900BE0174 /* libTCWeiboSDK-arm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTCWeiboSDK-arm.a"; sourceTree = "<group>"; };
+		8579E3D91929A69900BE0174 /* libTCWeiboSDK-i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTCWeiboSDK-i386.a"; sourceTree = "<group>"; };
+		8579E3DA1929A69900BE0174 /* libTCWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTCWeiboSDK.a; sourceTree = "<group>"; };
+		8579E3DB1929A69900BE0174 /* WeiboApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboApi.h; sourceTree = "<group>"; };
+		8579E3DC1929A69900BE0174 /* WeiboApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboApiObject.h; sourceTree = "<group>"; };
+		8579E4241929A6DE00BE0174 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8579E4251929A6DE00BE0174 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8579E4261929A6DE00BE0174 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8579E42A1929A81E00BE0174 /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8579E3551929A65F00BE0174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8579E4231929A69900BE0174 /* libTCWeiboSDK.a in Frameworks */,
+				8579E4221929A69900BE0174 /* libTCWeiboSDK-i386.a in Frameworks */,
+				8579E35E1929A65F00BE0174 /* CoreGraphics.framework in Frameworks */,
+				8579E4211929A69900BE0174 /* libTCWeiboSDK-arm.a in Frameworks */,
+				8579E4271929A6DE00BE0174 /* Security.framework in Frameworks */,
+				8579E3601929A65F00BE0174 /* UIKit.framework in Frameworks */,
+				8579E4291929A6DE00BE0174 /* Social.framework in Frameworks */,
+				8579E4281929A6DE00BE0174 /* Accounts.framework in Frameworks */,
+				8579E35C1929A65F00BE0174 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8579E3761929A65F00BE0174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8579E37B1929A65F00BE0174 /* XCTest.framework in Frameworks */,
+				8579E37D1929A65F00BE0174 /* UIKit.framework in Frameworks */,
+				8579E37C1929A65F00BE0174 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8579E34F1929A65F00BE0174 = {
+			isa = PBXGroup;
+			children = (
+				8579E3611929A65F00BE0174 /* Day1Weibo */,
+				8579E3801929A65F00BE0174 /* Day1WeiboTests */,
+				8579E35A1929A65F00BE0174 /* Frameworks */,
+				8579E3591929A65F00BE0174 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8579E3591929A65F00BE0174 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3581929A65F00BE0174 /* Day1Weibo.app */,
+				8579E3791929A65F00BE0174 /* Day1WeiboTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8579E35A1929A65F00BE0174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8579E4241929A6DE00BE0174 /* Security.framework */,
+				8579E4251929A6DE00BE0174 /* Accounts.framework */,
+				8579E4261929A6DE00BE0174 /* Social.framework */,
+				8579E35B1929A65F00BE0174 /* Foundation.framework */,
+				8579E35D1929A65F00BE0174 /* CoreGraphics.framework */,
+				8579E35F1929A65F00BE0174 /* UIKit.framework */,
+				8579E37A1929A65F00BE0174 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8579E3611929A65F00BE0174 /* Day1Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3901929A69900BE0174 /* TCWeiboSDK */,
+				8579E36A1929A65F00BE0174 /* TRAppDelegate.h */,
+				8579E36B1929A65F00BE0174 /* TRAppDelegate.m */,
+				8579E36D1929A65F00BE0174 /* Main.storyboard */,
+				8579E3701929A65F00BE0174 /* TRViewController.h */,
+				8579E3711929A65F00BE0174 /* TRViewController.m */,
+				8579E3731929A65F00BE0174 /* Images.xcassets */,
+				8579E3621929A65F00BE0174 /* Supporting Files */,
+			);
+			path = Day1Weibo;
+			sourceTree = "<group>";
+		};
+		8579E3621929A65F00BE0174 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3631929A65F00BE0174 /* Day1Weibo-Info.plist */,
+				8579E3641929A65F00BE0174 /* InfoPlist.strings */,
+				8579E3671929A65F00BE0174 /* main.m */,
+				8579E3691929A65F00BE0174 /* Day1Weibo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8579E3801929A65F00BE0174 /* Day1WeiboTests */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3861929A65F00BE0174 /* Day1WeiboTests.m */,
+				8579E3811929A65F00BE0174 /* Supporting Files */,
+			);
+			path = Day1WeiboTests;
+			sourceTree = "<group>";
+		};
+		8579E3811929A65F00BE0174 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3821929A65F00BE0174 /* Day1WeiboTests-Info.plist */,
+				8579E3831929A65F00BE0174 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8579E3901929A69900BE0174 /* TCWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8579E42A1929A81E00BE0174 /* constant.h */,
+				8579E3911929A69900BE0174 /* doc */,
+				8579E3D71929A69900BE0174 /* lib */,
+			);
+			path = TCWeiboSDK;
+			sourceTree = "<group>";
+		};
+		8579E3911929A69900BE0174 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3921929A69900BE0174 /* html */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		8579E3921929A69900BE0174 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3931929A69900BE0174 /* _weibo_api_8h_source.html */,
+				8579E3941929A69900BE0174 /* _weibo_api_object_8h_source.html */,
+				8579E3951929A69900BE0174 /* annotated.html */,
+				8579E3961929A69900BE0174 /* annotated.js */,
+				8579E3971929A69900BE0174 /* bc_s.png */,
+				8579E3981929A69900BE0174 /* bdwn.png */,
+				8579E3991929A69900BE0174 /* class_weibo_api-members.html */,
+				8579E39A1929A69900BE0174 /* class_weibo_api_object-members.html */,
+				8579E39B1929A69900BE0174 /* classes.html */,
+				8579E39C1929A69900BE0174 /* closed.png */,
+				8579E39D1929A69900BE0174 /* dir_6537656865ee3923719aa1a57f584d1d.html */,
+				8579E39E1929A69900BE0174 /* doxygen.css */,
+				8579E39F1929A69900BE0174 /* doxygen.png */,
+				8579E3A01929A69900BE0174 /* dynsections.js */,
+				8579E3A11929A69900BE0174 /* ftv2blank.png */,
+				8579E3A21929A69900BE0174 /* ftv2cl.png */,
+				8579E3A31929A69900BE0174 /* ftv2doc.png */,
+				8579E3A41929A69900BE0174 /* ftv2folderclosed.png */,
+				8579E3A51929A69900BE0174 /* ftv2folderopen.png */,
+				8579E3A61929A69900BE0174 /* ftv2lastnode.png */,
+				8579E3A71929A69900BE0174 /* ftv2link.png */,
+				8579E3A81929A69900BE0174 /* ftv2mlastnode.png */,
+				8579E3A91929A69900BE0174 /* ftv2mnode.png */,
+				8579E3AA1929A69900BE0174 /* ftv2mo.png */,
+				8579E3AB1929A69900BE0174 /* ftv2node.png */,
+				8579E3AC1929A69900BE0174 /* ftv2ns.png */,
+				8579E3AD1929A69900BE0174 /* ftv2plastnode.png */,
+				8579E3AE1929A69900BE0174 /* ftv2pnode.png */,
+				8579E3AF1929A69900BE0174 /* ftv2splitbar.png */,
+				8579E3B01929A69900BE0174 /* ftv2vertline.png */,
+				8579E3B11929A69900BE0174 /* functions.html */,
+				8579E3B21929A69900BE0174 /* functions_func.html */,
+				8579E3B31929A69900BE0174 /* functions_prop.html */,
+				8579E3B41929A69900BE0174 /* functions_vars.html */,
+				8579E3B51929A69900BE0174 /* hierarchy.html */,
+				8579E3B61929A69900BE0174 /* hierarchy.js */,
+				8579E3B71929A69900BE0174 /* icon.png */,
+				8579E3B81929A69900BE0174 /* index.html */,
+				8579E3B91929A69900BE0174 /* interface_weibo_api.html */,
+				8579E3BA1929A69900BE0174 /* interface_weibo_api.js */,
+				8579E3BB1929A69900BE0174 /* interface_weibo_api.png */,
+				8579E3BC1929A69900BE0174 /* interface_weibo_api_object.html */,
+				8579E3BD1929A69900BE0174 /* interface_weibo_api_object.js */,
+				8579E3BE1929A69900BE0174 /* interface_weibo_api_object.png */,
+				8579E3BF1929A69900BE0174 /* jquery.js */,
+				8579E3C01929A69900BE0174 /* nav_f.png */,
+				8579E3C11929A69900BE0174 /* nav_g.png */,
+				8579E3C21929A69900BE0174 /* nav_h.png */,
+				8579E3C31929A69900BE0174 /* navtree.css */,
+				8579E3C41929A69900BE0174 /* navtree.js */,
+				8579E3C51929A69900BE0174 /* navtreeindex0.js */,
+				8579E3C61929A69900BE0174 /* open.png */,
+				8579E3C71929A69900BE0174 /* protocol_weibo_auth_delegate-p-members.html */,
+				8579E3C81929A69900BE0174 /* protocol_weibo_auth_delegate-p.html */,
+				8579E3C91929A69900BE0174 /* protocol_weibo_auth_delegate-p.js */,
+				8579E3CA1929A69900BE0174 /* protocol_weibo_auth_delegate-p.png */,
+				8579E3CB1929A69900BE0174 /* protocol_weibo_request_delegate-p-members.html */,
+				8579E3CC1929A69900BE0174 /* protocol_weibo_request_delegate-p.html */,
+				8579E3CD1929A69900BE0174 /* protocol_weibo_request_delegate-p.js */,
+				8579E3CE1929A69900BE0174 /* protocol_weibo_request_delegate-p.png */,
+				8579E3CF1929A69900BE0174 /* resize.js */,
+				8579E3D01929A69900BE0174 /* sync_off.png */,
+				8579E3D11929A69900BE0174 /* sync_on.png */,
+				8579E3D21929A69900BE0174 /* tab_a.png */,
+				8579E3D31929A69900BE0174 /* tab_b.png */,
+				8579E3D41929A69900BE0174 /* tab_h.png */,
+				8579E3D51929A69900BE0174 /* tab_s.png */,
+				8579E3D61929A69900BE0174 /* tabs.css */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		8579E3D71929A69900BE0174 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8579E3D81929A69900BE0174 /* libTCWeiboSDK-arm.a */,
+				8579E3D91929A69900BE0174 /* libTCWeiboSDK-i386.a */,
+				8579E3DA1929A69900BE0174 /* libTCWeiboSDK.a */,
+				8579E3DB1929A69900BE0174 /* WeiboApi.h */,
+				8579E3DC1929A69900BE0174 /* WeiboApiObject.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8579E3571929A65F00BE0174 /* Day1Weibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8579E38A1929A65F00BE0174 /* Build configuration list for PBXNativeTarget "Day1Weibo" */;
+			buildPhases = (
+				8579E3541929A65F00BE0174 /* Sources */,
+				8579E3551929A65F00BE0174 /* Frameworks */,
+				8579E3561929A65F00BE0174 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day1Weibo;
+			productName = Day1Weibo;
+			productReference = 8579E3581929A65F00BE0174 /* Day1Weibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8579E3781929A65F00BE0174 /* Day1WeiboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8579E38D1929A65F00BE0174 /* Build configuration list for PBXNativeTarget "Day1WeiboTests" */;
+			buildPhases = (
+				8579E3751929A65F00BE0174 /* Sources */,
+				8579E3761929A65F00BE0174 /* Frameworks */,
+				8579E3771929A65F00BE0174 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8579E37F1929A65F00BE0174 /* PBXTargetDependency */,
+			);
+			name = Day1WeiboTests;
+			productName = Day1WeiboTests;
+			productReference = 8579E3791929A65F00BE0174 /* Day1WeiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8579E3501929A65F00BE0174 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					8579E3781929A65F00BE0174 = {
+						TestTargetID = 8579E3571929A65F00BE0174;
+					};
+				};
+			};
+			buildConfigurationList = 8579E3531929A65F00BE0174 /* Build configuration list for PBXProject "Day1Weibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8579E34F1929A65F00BE0174;
+			productRefGroup = 8579E3591929A65F00BE0174 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8579E3571929A65F00BE0174 /* Day1Weibo */,
+				8579E3781929A65F00BE0174 /* Day1WeiboTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8579E3561929A65F00BE0174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8579E3E51929A69900BE0174 /* classes.html in Resources */,
+				8579E3F51929A69900BE0174 /* ftv2node.png in Resources */,
+				8579E41A1929A69900BE0174 /* sync_off.png in Resources */,
+				8579E41F1929A69900BE0174 /* tab_s.png in Resources */,
+				8579E4031929A69900BE0174 /* interface_weibo_api.html in Resources */,
+				8579E3741929A65F00BE0174 /* Images.xcassets in Resources */,
+				8579E4101929A69900BE0174 /* open.png in Resources */,
+				8579E4121929A69900BE0174 /* protocol_weibo_auth_delegate-p.html in Resources */,
+				8579E4111929A69900BE0174 /* protocol_weibo_auth_delegate-p-members.html in Resources */,
+				8579E3DE1929A69900BE0174 /* _weibo_api_object_8h_source.html in Resources */,
+				8579E3E71929A69900BE0174 /* dir_6537656865ee3923719aa1a57f584d1d.html in Resources */,
+				8579E4081929A69900BE0174 /* interface_weibo_api_object.png in Resources */,
+				8579E3E81929A69900BE0174 /* doxygen.css in Resources */,
+				8579E4161929A69900BE0174 /* protocol_weibo_request_delegate-p.html in Resources */,
+				8579E3E11929A69900BE0174 /* bc_s.png in Resources */,
+				8579E4061929A69900BE0174 /* interface_weibo_api_object.html in Resources */,
+				8579E3FD1929A69900BE0174 /* functions_prop.html in Resources */,
+				8579E40B1929A69900BE0174 /* nav_g.png in Resources */,
+				8579E3DD1929A69900BE0174 /* _weibo_api_8h_source.html in Resources */,
+				8579E3FE1929A69900BE0174 /* functions_vars.html in Resources */,
+				8579E41C1929A69900BE0174 /* tab_a.png in Resources */,
+				8579E3E31929A69900BE0174 /* class_weibo_api-members.html in Resources */,
+				8579E3EE1929A69900BE0174 /* ftv2folderclosed.png in Resources */,
+				8579E3FB1929A69900BE0174 /* functions.html in Resources */,
+				8579E4181929A69900BE0174 /* protocol_weibo_request_delegate-p.png in Resources */,
+				8579E3661929A65F00BE0174 /* InfoPlist.strings in Resources */,
+				8579E40A1929A69900BE0174 /* nav_f.png in Resources */,
+				8579E4141929A69900BE0174 /* protocol_weibo_auth_delegate-p.png in Resources */,
+				8579E3F61929A69900BE0174 /* ftv2ns.png in Resources */,
+				8579E3EC1929A69900BE0174 /* ftv2cl.png in Resources */,
+				8579E4051929A69900BE0174 /* interface_weibo_api.png in Resources */,
+				8579E3FF1929A69900BE0174 /* hierarchy.html in Resources */,
+				8579E4021929A69900BE0174 /* index.html in Resources */,
+				8579E3E91929A69900BE0174 /* doxygen.png in Resources */,
+				8579E3EB1929A69900BE0174 /* ftv2blank.png in Resources */,
+				8579E3F31929A69900BE0174 /* ftv2mnode.png in Resources */,
+				8579E40C1929A69900BE0174 /* nav_h.png in Resources */,
+				8579E3F71929A69900BE0174 /* ftv2plastnode.png in Resources */,
+				8579E3F81929A69900BE0174 /* ftv2pnode.png in Resources */,
+				8579E3EF1929A69900BE0174 /* ftv2folderopen.png in Resources */,
+				8579E4151929A69900BE0174 /* protocol_weibo_request_delegate-p-members.html in Resources */,
+				8579E4201929A69900BE0174 /* tabs.css in Resources */,
+				8579E3E41929A69900BE0174 /* class_weibo_api_object-members.html in Resources */,
+				8579E41D1929A69900BE0174 /* tab_b.png in Resources */,
+				8579E3FC1929A69900BE0174 /* functions_func.html in Resources */,
+				8579E3F41929A69900BE0174 /* ftv2mo.png in Resources */,
+				8579E3F11929A69900BE0174 /* ftv2link.png in Resources */,
+				8579E3F21929A69900BE0174 /* ftv2mlastnode.png in Resources */,
+				8579E36F1929A65F00BE0174 /* Main.storyboard in Resources */,
+				8579E3E21929A69900BE0174 /* bdwn.png in Resources */,
+				8579E4011929A69900BE0174 /* icon.png in Resources */,
+				8579E3DF1929A69900BE0174 /* annotated.html in Resources */,
+				8579E3F91929A69900BE0174 /* ftv2splitbar.png in Resources */,
+				8579E3ED1929A69900BE0174 /* ftv2doc.png in Resources */,
+				8579E41E1929A69900BE0174 /* tab_h.png in Resources */,
+				8579E3FA1929A69900BE0174 /* ftv2vertline.png in Resources */,
+				8579E40D1929A69900BE0174 /* navtree.css in Resources */,
+				8579E3F01929A69900BE0174 /* ftv2lastnode.png in Resources */,
+				8579E3E61929A69900BE0174 /* closed.png in Resources */,
+				8579E41B1929A69900BE0174 /* sync_on.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8579E3771929A65F00BE0174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8579E3851929A65F00BE0174 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8579E3541929A65F00BE0174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8579E40E1929A69900BE0174 /* navtree.js in Sources */,
+				8579E4131929A69900BE0174 /* protocol_weibo_auth_delegate-p.js in Sources */,
+				8579E36C1929A65F00BE0174 /* TRAppDelegate.m in Sources */,
+				8579E3E01929A69900BE0174 /* annotated.js in Sources */,
+				8579E4191929A69900BE0174 /* resize.js in Sources */,
+				8579E4001929A69900BE0174 /* hierarchy.js in Sources */,
+				8579E4171929A69900BE0174 /* protocol_weibo_request_delegate-p.js in Sources */,
+				8579E4041929A69900BE0174 /* interface_weibo_api.js in Sources */,
+				8579E3681929A65F00BE0174 /* main.m in Sources */,
+				8579E4071929A69900BE0174 /* interface_weibo_api_object.js in Sources */,
+				8579E4091929A69900BE0174 /* jquery.js in Sources */,
+				8579E3721929A65F00BE0174 /* TRViewController.m in Sources */,
+				8579E3EA1929A69900BE0174 /* dynsections.js in Sources */,
+				8579E40F1929A69900BE0174 /* navtreeindex0.js in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8579E3751929A65F00BE0174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8579E3871929A65F00BE0174 /* Day1WeiboTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8579E37F1929A65F00BE0174 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8579E3571929A65F00BE0174 /* Day1Weibo */;
+			targetProxy = 8579E37E1929A65F00BE0174 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8579E3641929A65F00BE0174 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8579E3651929A65F00BE0174 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8579E36D1929A65F00BE0174 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8579E36E1929A65F00BE0174 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8579E3831929A65F00BE0174 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8579E3841929A65F00BE0174 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8579E3881929A65F00BE0174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8579E3891929A65F00BE0174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8579E38B1929A65F00BE0174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1Weibo/Day1Weibo-Prefix.pch";
+				INFOPLIST_FILE = "Day1Weibo/Day1Weibo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tarena/Documents/1402UIKit2/Day1Weibo/Day1Weibo/TCWeiboSDK/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8579E38C1929A65F00BE0174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1Weibo/Day1Weibo-Prefix.pch";
+				INFOPLIST_FILE = "Day1Weibo/Day1Weibo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tarena/Documents/1402UIKit2/Day1Weibo/Day1Weibo/TCWeiboSDK/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8579E38E1929A65F00BE0174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day1Weibo.app/Day1Weibo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1Weibo/Day1Weibo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day1WeiboTests/Day1WeiboTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8579E38F1929A65F00BE0174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Day1Weibo.app/Day1Weibo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Day1Weibo/Day1Weibo-Prefix.pch";
+				INFOPLIST_FILE = "Day1WeiboTests/Day1WeiboTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8579E3531929A65F00BE0174 /* Build configuration list for PBXProject "Day1Weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8579E3881929A65F00BE0174 /* Debug */,
+				8579E3891929A65F00BE0174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8579E38A1929A65F00BE0174 /* Build configuration list for PBXNativeTarget "Day1Weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8579E38B1929A65F00BE0174 /* Debug */,
+				8579E38C1929A65F00BE0174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8579E38D1929A65F00BE0174 /* Build configuration list for PBXNativeTarget "Day1WeiboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8579E38E1929A65F00BE0174 /* Debug */,
+				8579E38F1929A65F00BE0174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8579E3501929A65F00BE0174 /* Project object */;
+}
