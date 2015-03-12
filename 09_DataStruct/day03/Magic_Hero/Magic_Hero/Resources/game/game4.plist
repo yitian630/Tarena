@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>gameover.png</key>
+		<dict>
+			<key>x</key>
+			<real>0</real>
+			<key>y</key>
+			<real>195</real>
+			<key>width</key>
+			<real>424</real>
+			<key>height</key>
+			<real>98</real>
+			<key>offsetX</key>
+			<real>-35</real>
+			<key>offsetY</key>
+			<real>15</real>
+			<key>originalWidth</key>
+			<real>512</real>
+			<key>originalHeight</key>
+			<real>128</real>
+		</dict>
+		
+		<key>gameover_touch.png</key>
+		<dict>
+			<key>x</key>
+			<real>0</real>
+			<key>y</key>
+			<real>85</real>
+			<key>width</key>
+			<real>280</real>
+			<key>height</key>
+			<real>30</real>
+			<key>offsetX</key>
+			<real>-87</real>
+			<key>offsetY</key>
+			<real>13</real>
+			<key>originalWidth</key>
+			<real>512</real>
+			<key>originalHeight</key>
+			<real>64</real>
+		</dict>
+		
+		<key>reward_word.png</key>
+		<dict>
+			<key>x</key>
+			<real>0</real>
+			<key>y</key>
+			<real>0</real>
+			<key>width</key>
+			<real>112</real>
+			<key>height</key>
+			<real>32</real>
+			<key>offsetX</key>
+			<real>-4</real>
+			<key>offsetY</key>
+			<real>-0</real>
+			<key>originalWidth</key>
+			<real>128</real>
+			<key>originalHeight</key>
+			<real>32</real>
+		</dict>
+		
+		<key>stage_big.png</key>
+		<dict>
+			<key>x</key>
+			<real>113</real>
+			<key>y</key>
+			<real>0</real>
+			<key>width</key>
+			<real>168</real>
+			<key>height</key>
+			<real>84</real>
+			<key>offsetX</key>
+			<real>-217</real>
+			<key>offsetY</key>
+			<real>1</real>
+			<key>originalWidth</key>
+			<real>1024</real>
+			<key>originalHeight</key>
+			<real>128</real>
+		</dict>
+		
+		<key>warning.png</key>
+		<dict>
+			<key>x</key>
+			<real>0</real>
+			<key>y</key>
+			<real>116</real>
+			<key>width</key>
+			<real>386</real>
+			<key>height</key>
+			<real>78</real>
+			<key>offsetX</key>
+			<real>-45</real>
+			<key>offsetY</key>
+			<real>11</real>
+			<key>originalWidth</key>
+			<real>512</real>
+			<key>originalHeight</key>
+			<real>128</real>
+		</dict>
+		
+	</dict>
+	<key>texture</key>
+	<dict>
+		<key>width</key>
+		<integer>512</integer>
+		<key>height</key>
+		<integer>512</integer>
+	</dict>
+</dict>
+</plist>

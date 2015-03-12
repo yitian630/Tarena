@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Magic_Hero' target in the 'Magic_Hero' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
