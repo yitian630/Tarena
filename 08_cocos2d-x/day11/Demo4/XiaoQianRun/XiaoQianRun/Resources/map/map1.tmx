@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="12" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="1" tilewidth="303" tileheight="64">
+  <image source="1.png" width="303" height="512"/>
+ </tileset>
+ <tileset firstgid="9" name="2" tilewidth="592" tileheight="64">
+  <image source="2.png" width="592" height="554"/>
+ </tileset>
+ <tileset firstgid="17" name="3" tilewidth="1024" tileheight="64">
+  <image source="3.png" width="1024" height="512"/>
+ </tileset>
+ <tileset firstgid="25" name="4" tilewidth="955" tileheight="64">
+  <image source="4.png" width="955" height="512"/>
+ </tileset>
+ <tileset firstgid="33" name="5" tilewidth="792" tileheight="64">
+  <image source="5.png" width="792" height="545"/>
+ </tileset>
+ <layer name="layer1" width="100" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt0SkOADAMxMD0/P+TiyvVMEqBBxqttBGSJEnSW6seoEuH7k81BnT6SbkmdPpJuRZ0+km5NnT66UcHgtgAJQ==
+  </data>
+ </layer>
+ <layer name="layer2" width="100" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENACAMxMC0kMD+47IE0rvwTWC5SpIkST+tdAAA6cFOBwCQHnQ6AID0YNIBAKQHJx0AQHpw0wEApAcPiMoAiw==
+  </data>
+ </layer>
+ <layer name="layer3" width="100" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt07kNACAQxEBa4O+/U+KLsYTQeQqwNtlSJElSNvX1AAXt9QAFHe75tzsD7vm3OxPu0X/LZsE9+m/ZbLhH/+13B7YsAOw=
+  </data>
+ </layer>
+ <layer name="layer4" width="100" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztzqkNADAQxMBrI1//bQYfixSwZAYbuAoAAODfSA/QzPQAzUoP0Oz0AM15aC68CwCI
+  </data>
+ </layer>
+ <layer name="layer5" width="100" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztzjkNADAQxMCjko8/xZTRAoiumQFguQoAAOAZ3QOE2T1AWN0DhN09QDgf2xdlAgCw
+  </data>
+ </layer>
+ <objectgroup draworder="topdown" name="collision" width="100" height="12">
+  <object x="9" y="544" width="565" height="205"/>
+  <object x="769" y="451" width="1019" height="303"/>
+  <object x="2049" y="580" width="1022" height="177"/>
+  <object x="3267" y="517" width="288" height="234"/>
+  <object x="3650" y="577" width="293" height="170"/>
+  <object x="4164" y="542" width="572" height="212"/>
+  <object x="4941" y="597" width="764" height="157"/>
+  <object x="5835" y="578" width="591" height="174"/>
+  <object x="44" y="755" width="6391">
+   <properties>
+    <property name="die" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup draworder="topdown" name="gold" width="100" height="12">
+  <object x="1024" y="448"/>
+  <object x="1088" y="448"/>
+  <object x="1280" y="448"/>
+  <object x="1344" y="448"/>
+  <object x="1216" y="448"/>
+  <object x="1152" y="448"/>
+  <object x="960" y="448"/>
+  <object x="1795" y="381"/>
+  <object x="1865" y="326"/>
+  <object x="1961" y="294"/>
+  <object x="2064" y="326"/>
+  <object x="2138" y="390"/>
+  <object x="2191" y="463"/>
+ </objectgroup>
+</map>

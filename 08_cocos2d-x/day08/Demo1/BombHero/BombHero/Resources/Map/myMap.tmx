@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="60" tileheight="60">
+ <tileset firstgid="1" name="map" tilewidth="60" tileheight="60">
+  <image source="map.png" width="480" height="360"/>
+ </tileset>
+ <layer name="块层 1" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYmBgYBrFo3gUj+JRPIpJxADRBwMh
+  </data>
+ </layer>
+ <layer name="块层 2" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJytVEEOhDAIxD3obTepiV68mPD/N26blARxQLpZkklplRGGChMR/xmlYu0YMQZ7Nn4GT3z2vWxOUX7N9ortAWx8VKPY7NRncXRonohvSiLLd1a81HPZ6xVp7vHpGKvph3zL5NfORKu2vgf4Vrr3T2t/0L03qL+l7xe69gP50T31NI38zP8ktSIOVNOv+aHzjH7oG1HMSH7NovkV8Vq+ouDNwiyf5olmK+KT2JEZmsUXNYcc4g==
+  </data>
+ </layer>
+ <layer name="块层 3" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcQJNMfdpUdQV+oEsHO7QYiPMTueFFb0DP+BmqYDSMBg6A8rQOFA9VgK0soHVZBQDeqgIx
+  </data>
+ </layer>
+ <objectgroup draworder="topdown" name="objects" width="20" height="20">
+  <object x="60" y="120">
+   <properties>
+    <property name="direction" value="1"/>
+    <property name="objectName" value="hero"/>
+    <property name="speed" value="3"/>
+   </properties>
+  </object>
+  <object x="840" y="360">
+   <properties>
+    <property name="direction" value="0"/>
+    <property name="objectName" value="enemy1"/>
+    <property name="speed" value="5"/>
+   </properties>
+  </object>
+  <object x="120" y="780">
+   <properties>
+    <property name="direction" value="1"/>
+    <property name="objectName" value="enemy2"/>
+    <property name="speed" value="20"/>
+   </properties>
+  </object>
+  <object x="360" y="1080">
+   <properties>
+    <property name="direction" value="2"/>
+    <property name="objectName" value="enemy2"/>
+    <property name="speed" value="10"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="8" tilewidth="60" tileheight="60">
+ <tileset firstgid="1" name="map" tilewidth="60" tileheight="60">
+  <image source="map.png" width="480" height="360"/>
+  <tile id="44">
+   <properties>
+    <property name="isColide" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="49" name="res_map_0_3" tilewidth="58" tileheight="67">
+  <image source="res_map_0_3.png" width="58" height="201"/>
+ </tileset>
+ <layer name="background_layer" width="14" height="8">
+  <data encoding="base64" compression="zlib">
+   eJyTZWBg4CIRKwCxPhBzALE6kVgZiOWh+kA0ExDLQDGMLQzEikhsGST1MBpZnSJULzqNS58iDnuFkPi49MHkhdD0ymCxT4KEsBSA6tMgISxh2ACIAacHC3s=
+  </data>
+ </layer>
+ <layer name="build1_layer" width="14" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhYoAnEWiSo1yFgFiGgjUOcWDeQ4lZ6AAAXewEo
+  </data>
+ </layer>
+ <layer name="build2_layer" width="14" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgcwBCLmBGReo1x6MdlPjLbiAi9gxkAAHIbAY0=
+  </data>
+ </layer>
+ <layer name="collision_layer" width="14" height="8" opacity="0.46">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAf6JKIkfVhMwOX+bj4+MzApQ+Xmbo49GGzCxvAZSYp4UIOAABw0QhE
+  </data>
+ </layer>
+ <objectgroup draworder="topdown" name="objects" width="14" height="8">
+  <object x="120" y="120">
+   <properties>
+    <property name="direction" value="3"/>
+    <property name="objectName" value="hero"/>
+    <property name="speed" value="2.5"/>
+   </properties>
+  </object>
+  <object x="180" y="300">
+   <properties>
+    <property name="direction" value="3"/>
+    <property name="objectName" value="enemy2"/>
+    <property name="speed" value="1"/>
+   </properties>
+  </object>
+  <object x="660" y="180">
+   <properties>
+    <property name="direction" value="1"/>
+    <property name="objectName" value="enemy1"/>
+    <property name="speed" value="1.5"/>
+   </properties>
+  </object>
+  <object x="420" y="300">
+   <properties>
+    <property name="direction" value="3"/>
+    <property name="objectName" value="enemy1"/>
+    <property name="speed" value="0.8"/>
+   </properties>
+  </object>
+  <object x="420" y="120">
+   <properties>
+    <property name="direction" value="3"/>
+    <property name="objectName" value="enemy1"/>
+    <property name="speed" value="1.5"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

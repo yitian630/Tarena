@@ -1,0 +1,24 @@
+//
+//  Enemy2.cpp
+//  BombHero
+//
+//  Created by tarena on 14-6-16.
+//
+//
+
+#include "Enemy2.h"
+bool Enemy2::init() {
+    if (!Role::initRole()) return false;
+    
+    std::string moveFrame[] = {"enemy2_up%d.png","enemy2_down%d.png","enemy2_left%d.png","enemy2_right%d.png"};
+    this->addMoveAnimate(moveFrame, 4);
+    
+    return true;
+}
+
+
+
+
+
+
+

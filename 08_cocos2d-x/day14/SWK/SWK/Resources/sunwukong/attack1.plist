@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>sprite 1760001.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{622,2},{334,346}}</string>
+                <key>offset</key>
+                <string>{-4,4}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{142,0},{334,346}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+            <key>sprite 1760002.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{622,2},{334,346}}</string>
+                <key>offset</key>
+                <string>{-4,4}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{142,0},{334,346}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+            <key>sprite 1760003.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{596,338},{402,272}}</string>
+                <key>offset</key>
+                <string>{26,32}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{138,9},{402,272}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+            <key>sprite 1760004.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,352},{456,184}}</string>
+                <key>offset</key>
+                <string>{34,-32}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{119,117},{456,184}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+            <key>sprite 1760005.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,180},{592,170}}</string>
+                <key>offset</key>
+                <string>{-12,-56}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{5,148},{592,170}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+            <key>sprite 1760006.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,180},{592,170}}</string>
+                <key>offset</key>
+                <string>{-12,-56}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{5,148},{592,170}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+            <key>sprite 1760007.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{618,176}}</string>
+                <key>offset</key>
+                <string>{-2,-53}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{2,142},{618,176}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+            <key>sprite 1760008.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{618,176}}</string>
+                <key>offset</key>
+                <string>{-2,-53}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{2,142},{618,176}}</string>
+                <key>sourceSize</key>
+                <string>{626,354}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>attack1.png</string>
+            <key>size</key>
+            <string>{1024,1024}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:e8399d0cc83d2fc5180cd883b950f4ac$</string>
+            <key>textureFileName</key>
+            <string>attack1.png</string>
+        </dict>
+    </dict>
+</plist>

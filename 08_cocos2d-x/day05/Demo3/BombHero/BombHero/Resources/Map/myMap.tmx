@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="60" tileheight="60">
+ <tileset firstgid="1" name="map" tilewidth="60" tileheight="60">
+  <image source="map.png" width="480" height="360"/>
+  <tile id="25">
+   <properties>
+    <property name="isCollision" value="yes"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="layer1" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJylk1ELgCAMhM2HeitwUA9FIPj/f2MKCsdxGtHDB2Nwt7nN5JxLP/CZCHgiCpo2Cj/lo7Rcv8RHZu+wDWqU3Jy5OqykRd0XrVUCeC2ZqXK/1DV4K88HfQonzcig5wC9GPiiH2vV7HkHShtEPd4l6lWuxdwz73Pkp1B3Nbrb3o3/+T+FB8XFFng=
+  </data>
+ </layer>
+ <layer name="layer2" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh+QBOItaBYk0R9IKwN5WtR6AZy1ROrVwcHHgVDCwAAG44C0Q==
+  </data>
+ </layer>
+ <layer name="collision_layer" width="15" height="15" opacity="0.36">
+  <data encoding="base64" compression="zlib">
+   eJyTYmBgkKIAkwOQ9ZJqHi716GxcarDZgc0tuMzE5Q9cZuLTi089MXoJxQkx9uIC+PxLKM5IjUty9GJTS4qbKbEXlzvIxQC5cgp3
+  </data>
+ </layer>
+ <objectgroup draworder="topdown" name="object" width="15" height="15">
+  <object x="60" y="120">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="name" value="hero"/>
+    <property name="speed" value="2"/>
+   </properties>
+  </object>
+  <object x="180" y="240">
+   <properties>
+    <property name="dir" value="2"/>
+    <property name="name" value="enemy1"/>
+    <property name="speed" value="2.5"/>
+   </properties>
+  </object>
+  <object x="360" y="240">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="name" value="enemy2"/>
+    <property name="speed" value="1.5"/>
+   </properties>
+  </object>
+  <object x="360" y="60">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="name" value="enemy1"/>
+    <property name="speed" value="8"/>
+   </properties>
+  </object>
+  <object x="300" y="780">
+   <properties>
+    <property name="dir" value="2"/>
+    <property name="name" value="enemy1"/>
+    <property name="speed" value="3"/>
+   </properties>
+  </object>
+  <object x="780" y="180">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="name" value="enemy1"/>
+    <property name="speed" value="30"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 5.4.4 (402231)"/><meta name="author" content="aa791027tt"/><meta name="created" content="2013-08-21 03:20:06 +0000"/><meta name="updated" content="2013-12-27 08:26:27 +0000"/><title>Box2d 物理游戏引擎</title></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">
+<span style="font-size: 24px;"><font color="#FF40FF"><span style="font-family: Helvetica;">一.</span> <span style="font-family: 'Heiti SC Light';">介绍</span></font></span>
+<div><span style="font-size: 24px;"><font face="Heiti SC Light">Box2D物理引擎是用C++编写的,所以在Cocos2D-X引擎当中可以方便地的调用.根据前面的介绍,Box2D物理引擎的出现是先于Cocos2D-X引擎,从这一点来看,就能清楚Box2D是一个独立的物理引擎.</font></span></div>
+<div><span style="font-size: 24px;"><span style="font-family: 'Heiti SC Light';"><span style="white-space:pre">物理引擎,对渲染是无知的。在内存中模拟物体的各种物理特性(重力、摩擦力、弹力、 阻尼、速度、碰撞….)<br/>
+<br/></span></span></span>
+<div><font color="#FF40FF" style="font-size: 24px;"><font color="#FF40FF"><br/></font></font></div>
+<font color="#FF40FF" style="font-size: 24px;">二、物理世界</font>
+<div><span style="font-size: 24px;">在游戏中的虚拟世界，实际就是现实人们生活世界中仿照。在游戏世界中最常见的模拟世界，就是创建一个虚拟的具备重力的世界。这也就是开发者所称为的物理世界。</span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><font color="#FF40FF" style="font-size: 24px;">三、游戏中的两个世界</font></div>
+<div><span style="font-size: 24px;">一个是负责游戏画面渲染的 Cocos2D-X 引擎中的 渲染世界</span></div>
+<div><span style="font-size: 24px;">一个是负责游戏的物理模拟的物理世界</span></div>
+<div><span style="font-size: 24px;">他们都有一个单独存在的空间，独自运转。他们拥有自己的坐标系和基本单元</span></div>
+<div><span style="font-size: 24px;">注意：物理世界不是所有游戏都具备的。</span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;">两个世界的数据交互：将物理世界中物体的信息传递给渲染世界以此来绘制游戏内容，同时，渲染世界接受用户的操作，将他们传递给物理世界。两个世界的数据交互将会按照一定的时间周期进行。</span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;">物理世界具备下面的三个特点：</span></div>
+<div><span style="font-size: 24px;">（1）物理世界中存在一个重力（可为零）</span></div>
+<div><span style="font-size: 24px;">（2）物理世界可以是一个存在边界的范围（有碰撞效果）</span></div>
+<div><span style="font-size: 24px;">（3）在世界中加入静态和动态数据（具备质量和位置）。它们被用来模拟现实的运动规律。</span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><font color="#FF40FF" style="font-size: 24px;">四、创建一个程序 分析目录结构</font></div>
+<div><span style="font-size: 24px;">Box2D引擎由三个模块组成：</span></div>
+<div><span style="font-size: 24px;">1.Common 核心模块包括了内存分配、数学计算。</span></div>
+<div><span style="font-size: 24px;">2.Collision 模块定义了形状（Shapes）、碰撞功能/查询（collision functions/queries）。</span></div>
+<div><span style="font-size: 24px;">3.Dynamics 模块提供对世界（World）、刚体（bodies）、框架（fixtures）和关节（joint）的模拟<br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><font color="#FF40FF" style="font-size: 24px;">五、基本概念</font></div>
+<div><font color="#FF9300" style="font-size: 24px;">1.物理世界（World）b2Word</font></div>
+<div><span style="font-size: 24px;">一个物理世界就是由各种的刚体、框架、形状相互作用的集合。Box2D支持多个世界，但这通常没有必要, 通常我们只有一个世界。</span></div>
+<div><span style="font-size: 24px;">世界还负责Box2D的内存管理.在Box2D内存管理上,没有引用计数器的感念.所以Box2D的内存管理和Cocos2D的内存管理是不同的.Box2D在栈中创建一些临时对象,因为栈里的对象不需要我们内存管理.</span></div>
+<div><span style="font-size: 24px;">但是对于一直长期使用的对象还是需要创建在堆中,比如b2Word.</span></div>
+<div><font color="#FF9300" style="font-size: 24px;">2.刚体（Rigid Bodies） //刚硬的形态  b2Body</font></div>
+<div><span style="font-size: 24px;">Box2D物理引擎只支持拥有刚属性的物体（简称刚体）</span></div>
+<div><span style="font-size: 24px;">Box2D物理世界中，所有物体都是刚体。这些物体一旦被创建出来后，其形态就不会发生改变。在受到外力的或者发生碰撞时，其内部各个点之间不会发生改变。</span></div>
+<div><span style="font-size: 24px;">比如：生活中的 玻璃球 铁球 都算刚体，他们很难发生形变，其内部的密度也不容易改变。</span></div>
+<div><span style="font-size: 24px;">注意：理想的刚体，在现实生活中并不存在。上述球体仍然是可以发生性变的。</span></div>
+<div><font color="#FF9300" style="font-size: 24px;">3.形状（Shapes）</font><span style="color: rgb(8, 250, 149); font-family: Menlo; font-size: 18px;">b2EdgeShape</span></div>
+<div><span style="font-family: Menlo; font-size: 18px;">每一种缸体都必须是有形状的,刚体创建好后都必须指定形状</span></div>
+<div><span style="font-size: 24px;">是依附于框架（Fixture）的2D平面几何结构，主要用于世界里的物理碰撞的检测。</span></div>
+<div><font color="#FF9300" style="font-size: 24px;">4.框架  也称 夹具（Fixture）</font><span style="color: rgb(8, 250, 149); font-family: Menlo; font-size: 18px;">b2FixtureDef</span></div>
+<div><span style="font-size: 24px;">框架是一个定义的具体概念。它是连接物体和形态之间的框架。它存在的目的主要是为了物理引擎的运算考虑。因为Fixture中保存着参与运算的物理数据，所以它可以被作为一个数据对象。</span></div>
+<div><font color="#FF9300" style="font-size: 24px;">5.关节</font></div>
+<div><span style="font-size: 24px;">关节的作用是讲两个有一定运动自由度的物体连接起来。同时它也会约束两个或多个连接的物体</span></div>
+<div><span style="font-size: 24px;">Box2D引擎支持的关节类型有旋转、距离等等，他们通常具备了两个共同属性：限制和马达。</span><br/></div>
+<div><span style="font-size: 24px;">     关节限制:一个关节限制,限定了一个关节的运动范围.例如人类的胳膊肘只能做某一范围角度的运动.</span></div>
+<div><span style="font-size: 24px;">     关节马达:一个关节马达能依照关节的自由度来驱动所连接的物体.例如,你可以使用一个马达来驱动一个关节.</span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="-evernote-last-insertion-point:true;"></span><br/></div>
+<div><span style="font-size: 24px;">相关类</span></div>
+<div><span style="font-size: 24px;">     b2Vec2,矢量,封装两个值(x, y) 通常表示方向</span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><span style="font-size: 24px;"><br/></span></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+</div>
+</body></html>
